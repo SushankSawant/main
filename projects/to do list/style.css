@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  /* transition: all 5s ease-in-out; */
+}
+
+.page {
+  background: rgb(34, 40, 49);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(34, 40, 49, 1) 0%,
+    rgba(46, 103, 194, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(34, 40, 49, 1) 0%,
+    rgba(46, 103, 194, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(34, 40, 49, 1) 0%,
+    rgba(46, 103, 194, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#222831",endColorstr="#2e67c2",GradientType=1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 10px;
+}
+
+.alert {
+  /* display: none; */
+  position: fixed;
+  left: 550px;
+  top: 10px;
+  font-size: 15px;
+  background: #d24545;
+  padding: 15px;
+  border-radius: 15px;
+  border: 5px solid black;
+  transition: all 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.displaynone {
+  /* display: none; */
+  opacity: 0;
+  top: -10px;
+}
+
+.container {
+  position: relative;
+  height: 500px;
+  width: 60%;
+  border-radius: 15px;
+  background: #eeeeee8f;
+  padding: 20px;
+  z-index: 2;
+}
+
+.container input {
+  width: 100%;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.151);
+  outline: none;
+  border: none;
+  /* padding: 15px; */
+  padding: 12px;
+  border: 5px solid #222831;
+  font-size: 20px;
+}
+
+.container input::placeholder {
+  color: rgba(0, 0, 0, 0.404);
+}
+
+.container ul {
+  list-style: none;
+}
+
+.container ul li {
+  font-weight: bold;
+  width: 100%;
+  background: #00adb5;
+  margin-top: 15px;
+  color: black;
+  /* border-radius: 20px; */
+  padding: 15px;
+  padding-right: 25px;
+  text-align: justify;
+  position: relative;
+}
+
+.container ul li:hover {
+  cursor: pointer;
+}
+
+.container ul li span {
+  color: black;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  /* color: white; */
+}
+
+.done {
+  text-decoration: line-through;
+  background: #00acb57a !important;
+  color: white;
+}

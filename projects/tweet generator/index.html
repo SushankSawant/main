@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="body-flex">
+      <!-- display section -->
+      <div class="tweet-wrapper displaynone" id="tweet-wrapper">
+        <div class="container">
+          <div class="namesec">
+            <span class="material-symbols-outlined"> account_circle </span>
+            <p id="name">Your Name</p>
+          </div>
+          <div class="tweetsec">
+            <p id="tweetpara">
+              Crafted this tweet generator myself . Share your thoughts in quick
+              bursts - 250 characters max. Keep it short, sweet, and impactful.
+              Once You reach the 250 charecters limit. the charecters count
+              indicator turns red
+            </p>
+          </div>
+          <p id="charecters">0 / 250 charecters</p>
+          <div class="date">
+            <h3 id="date">Date</h3>
+          </div>
+        </div>
+        <button id="upload" onclick="location.reload();">Upload!</button>
+      </div>
+      <!-- display section -->
+      <!-- edit section -->
+      <div class="edit-wrapper">
+        <h1 id="heading">Write A Tweet!</h1>
+
+        <div class="namecontainer">
+          <label for="">Your Name :</label>
+          <input type="text" placeholder="Sushank Sawant" required />
+        </div>
+        <div class="tweet-input">
+          <label for="">Tweet Input :</label>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Enter the content here!"
+          ></textarea>
+        </div>
+        <button id="btn">ADD DATE AND TIME!</button>
+        <button id="btn1">CREATE A NEW TWEET!</button>
+      </div>
+      <!-- edit section -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

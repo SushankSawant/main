@@ -1,0 +1,174 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(59, 59, 59);
+}
+
+.body-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: calc(110vh - 70px);
+  transition: all 1s ease-in-out;
+}
+
+.tweet-wrapper {
+  /* border: 2px solid black; */
+  width: 400px;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgb(0, 132, 255);
+  color: white;
+  box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.267);
+  border: 5px solid rgb(255, 255, 255);
+}
+
+.namesec {
+  display: flex;
+  align-items: center;
+}
+
+.namesec span {
+  margin-right: 10px;
+}
+
+.namesec p {
+  margin: 0;
+  text-transform: capitalize;
+}
+.tweetsec {
+  /* height: auto; */
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* .tweetsec p {
+  padding: 10px;
+  text-wrap: wrap;
+  overflow: hidden;
+} */
+
+#tweetpara {
+  background: none;
+  color: white;
+  width: auto;
+  height: auto;
+  white-space: wrap;
+  text-wrap: wrap;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.edit-wrapper {
+  border: 2px solid black;
+  width: 600px;
+  height: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 20px;
+}
+
+.namecontainer input {
+  padding: 10px;
+  width: 80%;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tweet-input textarea {
+  width: 80%;
+  height: 100px;
+  overflow-x: visible;
+  padding: 10px;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  resize: none;
+}
+
+#date {
+  font-size: 12px;
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+
+.tweet-input,
+.namecontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+#charecters {
+  color: white;
+  font-size: 15 px;
+  margin-bottom: 5px;
+}
+
+#btn {
+  padding: 20px;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  background: none;
+  outline: none;
+  box-shadow: 2px 2px 1px 1px black;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+#btn:active {
+  box-shadow: 2px 2px 1px 1px black inset;
+}
+
+#btn1 {
+  padding: 20px;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  background: rgb(0, 132, 255);
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#upload {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(0, 132, 255);
+  outline: none;
+  border: none;
+  background: white;
+  cursor: pointer;
+  width: 100%;
+}
+
+.displaynone {
+  display: none;
+}
+
+@media (max-width: 1111px) {
+  .body-flex {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .edit-wrapper {
+    width: 80%;
+  }
+
+  .tweet-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+}
