@@ -4,69 +4,106 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PORTFOLIO</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap"
       rel="stylesheet"
-    />  
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
     <link rel="stylesheet" href="style2.css" />
   </head>
   <body>
     <div class="mob-sidebar">
-      <span class="material-symbols-outlined menuicon" onclick="dMenu()" >
+      <span class="material-symbols-outlined menuicon" onclick="dMenu()">
         menu
-        </span>
-        <span class="material-symbols-outlined closeicon" onclick="cMenu()">
-          close
-          </span>
-        <div class="mobsidebar" id="sidebar">
-          <ul>
-            <a href=""><li id="active"><h4>home</h4><span class="material-symbols-outlined">
-              home
-              </span></li></a>
-            <a href="#skill"><li><h4>skill</h4><span class="material-symbols-outlined">
-              code
-              </span></li></a>
-            <a href="#projectmain"><li><h4>projects</h4><span class="material-symbols-outlined">
-              web
-              </span></li></a>
-              <a href="#about"><li><h4>about</h4><span class="material-symbols-outlined">
-                account_circle
-              </span></li></a>
-              <a href=""><li><h4>resume</h4><span class="material-symbols-outlined">
-                download
-                </span></li></a>
-          </ul>
-        </div>
+      </span>
+      <span class="material-symbols-outlined closeicon" onclick="cMenu()">
+        close
+      </span>
+      <div class="mobsidebar" id="sidebar">
+        <ul>
+          <a href=""
+            ><li id="active">
+              <h4>home</h4>
+              <span class="material-symbols-outlined"> home </span>
+            </li></a
+          >
+          <a href="#skill"
+            ><li>
+              <h4>skill</h4>
+              <span class="material-symbols-outlined"> code </span>
+            </li></a
+          >
+          <a href="#projectmain"
+            ><li>
+              <h4>projects</h4>
+              <span class="material-symbols-outlined"> web </span>
+            </li></a
+          >
+          <a href="#about"
+            ><li>
+              <h4>about</h4>
+              <span class="material-symbols-outlined"> account_circle </span>
+            </li></a
+          >
+          <a href=""
+            ><li>
+              <h4>resume</h4>
+              <span class="material-symbols-outlined"> download </span>
+            </li></a
+          >
+        </ul>
+      </div>
     </div>
-    
+
     <!-- home section -->
-    <div class="mainhome">
+    <div class="mainhome" id="home">
       <div class="sidebar">
         <ul>
-          <a href=""><li id="active"><h4>home</h4><span class="material-symbols-outlined">
-            home
-            </span></li></a>
-          <a href="#skill"><li><h4>skill</h4><span class="material-symbols-outlined">
-            code
-            </span></li></a>
-          <a href="#projectmain"><li><h4>projects</h4><span class="material-symbols-outlined">
-            web
-            </span></li></a>
-            <a href="#about"><li><h4>about</h4><span class="material-symbols-outlined">
-              account_circle
-            </span></li></a>
-            <a href=""><li><h4>resume</h4><span class="material-symbols-outlined">
-              download
-              </span></li></a>
+          <a href=""
+            ><li id="active">
+              <h4>home</h4>
+              <span class="material-symbols-outlined"> home </span>
+            </li></a
+          >
+          <a href="#skill"
+            ><li>
+              <h4>skill</h4>
+              <span class="material-symbols-outlined"> code </span>
+            </li></a
+          >
+          <a href="#projectmain"
+            ><li>
+              <h4>projects</h4>
+              <span class="material-symbols-outlined"> web </span>
+            </li></a
+          >
+          <a href="#about"
+            ><li>
+              <h4>about</h4>
+              <span class="material-symbols-outlined"> account_circle </span>
+            </li></a
+          >
+          <a href=""
+            ><li>
+              <h4>resume</h4>
+              <span class="material-symbols-outlined"> download </span>
+            </li></a
+          >
         </ul>
       </div>
       <div class="intro">
@@ -81,6 +118,7 @@
     <!-- home section end -->
     <!-- skill section start -->
     <div class="mainskill" id="skill">
+      <a href="#home"><div class="topbtn">TOP🔼</div></a>
       <div class="skilltitle">
         <h1>&lt; skills /&gt;</h1>
       </div>
@@ -134,124 +172,196 @@
     <!-- skill section emds -->
     <!-- project section start -->
     <div class="mainproject" id="projectmain">
+      <a href="#home"><div class="topbtn">TOP🔼</div></a>
       <div class="skilltitle">
         <h1>&lt; projects /&gt;</h1>
       </div>
       <div class="projectscontainer">
-        
-      <div class="projectscontainer">
-        <div class="projectbox" onclick="fnc()">
-          <a href="projects/tweet generator/index.html" target="_blank">
-            <div class="projectimg">
-              <img src="projects/tweet generator/tweet.jpg" alt="" />
-            </div>
-            <div class="projectdetails">
-              <h1>Live Tweet Template 🔴</h1>
-              <p class="info">Live text update from input to tweet template.</p>
-            </div>
-          </a>
-        </div>
-        <div class="projectbox" onclick="fnc()">
-          <a href="projects/to do list/index.html" target="_blank">
-            <div class="projectimg">
-              <img src="projects/to do list/todolist.jpg" alt="" />
-            </div>
-            <div class="projectdetails">
-              <h1>To-Do-List 📃</h1>
-              <p class="info">Add Your To Do Items!</p>
-            </div>
-          </a>
-        </div>
-        <div class="projectbox">
-          <a href="projects/clock/index.html" target="_blank">
-            <div class="projectimg">
-              <img src="projects/clock/SharedScreenshot.jpg" alt="" />
-            </div>
-            <div class="projectdetails">
-              <h1>Clock Website⌚</h1>
-              <p class="info">Just a Live Clock!</p>
-            </div>
-          </a>
-        </div>
-        <div class="projectbox">
-          <a href="projects/color changer/index.html" target="_blank">
-            <div class="projectimg">
-              <img src="projects/color changer/colorgenweb.jpg" alt="" />
-            </div>
-            <div class="projectdetails">
-              <h1>Random Color generator🎨</h1>
-              <p class="info">
-                A button has been assigned a function which when clicked
-                generates random hex code and shows the output in the
-                background.
-              </p>
-            </div>
-          </a>
-        </div>
-        <div class="projectbox">
-          <a
-            href="projects/Drum Kit Starting Files/Drum Kit Starting Files/index.html"
-            target="_blank"
-          >
-            <div class="projectimg">
-              <img
-                src="projects/Drum Kit Starting Files/Drum Kit Starting Files/images/drumweb.jpg"
-                alt=""
-              />
-            </div>
-            <div class="projectdetails">
-              <h1>Drum Kit!🥁</h1>
-              <p class="info">
-                You can use mouse or keyboard to play the drum each button(box)
-                has been assigned different drum sounds.
-              </p>
-            </div>
-          </a>
-        </div>
-        <div class="projectbox">
-          <a href="projects/dice game/dice.html" target="_blank">
-            <div class="projectimg">
-              <img src="projects/dice game/diceface/diceweb.jpg" alt="" />
-            </div>
-            <div class="projectdetails">
-              <h1>The Dice Roller🎲</h1>
-              <p class="info">Genrates Random Dice Faces On Each refresh</p>
-            </div>
-          </a>
-        </div>
-        <div class="projectbox">
-          <a href="projects/youtube clone/yt.html" target="_blank">
-            <div class="projectimg">
-              <img src="projects/youtube clone/ytss.jpg" alt="" />
-            </div>
-            <div class="projectdetails">
-              <h1>Youtube Clone</h1>
-              <p class="info">Made Using Only HTML AND CSS</p>
-            </div>
-          </a>
+        <div class="projectscontainer">
+          <div class="projectbox" onclick="fnc()">
+            <a href="projects/tweet generator/index.html" target="_blank">
+              <div class="projectimg">
+                <img src="projects/tweet generator/tweet.jpg" alt="" />
+              </div>
+              <div class="projectdetails">
+                <h1>Live Tweet Template 🔴</h1>
+                <p class="info">
+                  Live text update from input to tweet template.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="projectbox" onclick="fnc()">
+            <a href="projects/to do list/index.html" target="_blank">
+              <div class="projectimg">
+                <img src="projects/to do list/todolist.jpg" alt="" />
+              </div>
+              <div class="projectdetails">
+                <h1>To-Do-List 📃</h1>
+                <p class="info">Add Your To Do Items!</p>
+              </div>
+            </a>
+          </div>
+          <div class="projectbox">
+            <a href="projects/clock/index.html" target="_blank">
+              <div class="projectimg">
+                <img src="projects/clock/SharedScreenshot.jpg" alt="" />
+              </div>
+              <div class="projectdetails">
+                <h1>Clock Website⌚</h1>
+                <p class="info">Just a Live Clock!</p>
+              </div>
+            </a>
+          </div>
+          <div class="projectbox">
+            <a href="projects/color changer/index.html" target="_blank">
+              <div class="projectimg">
+                <img src="projects/color changer/colorgenweb.jpg" alt="" />
+              </div>
+              <div class="projectdetails">
+                <h1>Random Color generator🎨</h1>
+                <p class="info">
+                  A button has been assigned a function which when clicked
+                  generates random hex code and shows the output in the
+                  background.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="projectbox">
+            <a
+              href="projects/Drum Kit Starting Files/Drum Kit Starting Files/index.html"
+              target="_blank"
+            >
+              <div class="projectimg">
+                <img
+                  src="projects/Drum Kit Starting Files/Drum Kit Starting Files/images/drumweb.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="projectdetails">
+                <h1>Drum Kit!🥁</h1>
+                <p class="info">
+                  You can use mouse or keyboard to play the drum each
+                  button(box) has been assigned different drum sounds.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="projectbox">
+            <a href="projects/dice game/dice.html" target="_blank">
+              <div class="projectimg">
+                <img src="projects/dice game/diceface/diceweb.jpg" alt="" />
+              </div>
+              <div class="projectdetails">
+                <h1>The Dice Roller🎲</h1>
+                <p class="info">Genrates Random Dice Faces On Each refresh</p>
+              </div>
+            </a>
+          </div>
+          <div class="projectbox">
+            <a href="projects/youtube clone/yt.html" target="_blank">
+              <div class="projectimg">
+                <img src="projects/youtube clone/ytss.jpg" alt="" />
+              </div>
+              <div class="projectdetails">
+                <h1>Youtube Clone</h1>
+                <p class="info">Made Using Only HTML AND CSS</p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
+
     <!-- project section end -->
     <!-- Resume Section START -->
-    <div class="mainresume" id="about">
+    <div class="mainabout" id="about">
+      <a href="#home"><div class="topbtn">TOP🔼</div></a>
       <div class="skilltitle">
-        <h1>&lt; about /&gt;</h1>
+        <!-- <h1>&lt; about /&gt;</h1> -->
         <div class="qualification">
           <div class="quali" id="q1">
             <h2>ssc</h2>
-            <p>Marking the culmination of my foundational education, I proudly hold the Secondary School Certificate (SSC) from St. Paul's High School, Dadar. This certificate signifies my successful completion of ten years of rigorous academic pursuits, laying the groundwork for future endeavors. My experience at St. Paul's High School not only equipped me with essential knowledge and skills, but also nurtured valuable values and personal growth. It serves as a testament to my dedication, perseverance, and the invaluable guidance received from my teachers and mentors.
+            <p>
+              Marking the culmination of my foundational education, I proudly
+              hold the Secondary School Certificate (SSC) from St. Paul's High
+              School, Dadar. This certificate signifies my successful completion
+              of ten years of rigorous academic pursuits, laying the groundwork
+              for future endeavors. My experience at St. Paul's High School not
+              only equipped me with essential knowledge and skills, but also
+              nurtured valuable values and personal growth. It serves as a
+              testament to my dedication, perseverance, and the invaluable
+              guidance received from my teachers and mentors.
             </p>
           </div>
           <div class="quali" id="q2">
             <h2>hsc</h2>
-            <p>Building upon the solid foundation of my SSC, I subsequently earned the Higher Secondary Certificate (HSC) from M. D. College, Parel. This two-year period, encompassing grades 11 and 12, marked a period of deeper exploration and specialization in chosen subjects. The rigorous curriculum at M. D. College challenged me intellectually, honed my critical thinking skills, and prepared me for further academic challenges. I am grateful for the knowledgeable faculty and supportive environment that fostered my academic growth and personal development during this crucial juncture. Receiving the HSC signifies not only the successful completion of this stage of education but also my dedication to academic pursuits and pursuit of higher goals.
+            <p>
+              Building upon the solid foundation of my SSC, I subsequently
+              earned the Higher Secondary Certificate (HSC) from M. D. College,
+              Parel. This two-year period, encompassing grades 11 and 12, marked
+              a period of deeper exploration and specialization in chosen
+              subjects. The rigorous curriculum at M. D. College challenged me
+              intellectually, honed my critical thinking skills, and prepared me
+              for further academic challenges. I am grateful for the
+              knowledgeable faculty and supportive environment that fostered my
+              academic growth and personal development during this crucial
+              juncture. Receiving the HSC signifies not only the successful
+              completion of this stage of education but also my dedication to
+              academic pursuits and pursuit of higher goals.
             </p>
           </div>
           <div class="quali" id="q3">
             <h2>graduation</h2>
-            <p>Following my HSC, I pursued a B.Com. degree at Bhavan's College, Girgaon. This rigorous program (13th-15th standards) instilled in me a deep understanding of commerce, preparing me for a flourishing career path. I'm proud to have successfully navigated this journey, acquiring the knowledge and skills to confidently enter the professional world.
+            <p>
+              Following my HSC, I pursued a B.Com. degree at Bhavan's College,
+              Girgaon. This rigorous program (13th-15th standards) instilled in
+              me a deep understanding of commerce, preparing me for a
+              flourishing career path. I'm proud to have successfully navigated
+              this journey, acquiring the knowledge and skills to confidently
+              enter the professional world.
             </p>
+          </div>
+        </div>
+        <div class="abouttitle">
+          <div class="content">
+            <h1>about me !</h1>
+            <p>
+              Ten years ago, the allure of commerce pulled me down a different
+              path. But deep down, the tech in me tugged, whispering questions
+              about website magic. Curiosity took hold, morphing into
+              pixel-perfect obsession. HTML became my secret language, CSS my
+              palette, and JavaScript my dance partner. As a graphic designer,
+              my eye craved beauty, so I sketched a website dream, then
+              hand-coded it into reality. The journey was rocky, frustration my
+              frequent foe. Yet, with each hurdle cleared, my front-end skills
+              gained momentum. Now, the siren song of back-end beckons,
+              promising new depths to explore. This is my story, a tale of
+              curiosity, code, and pixel-perfect passion, still being written,
+              one line at a time.
+            </p>
+          </div>
+          <div class="socials">
+            <h1>Socials</h1>
+            <div class="links">
+              <a href="" id="instagramid"
+                ><div class="circle">
+                  <i class="fa-brands fa-instagram"></i></div
+              ></a>
+              <a href="" id="youtubeid"
+                ><div class="circle">
+                  <i class="fa-brands fa-youtube"></i></div
+              ></a>
+              <a href="" id="githubid"
+                ><div class="circle">
+                  <i class="fa-brands fa-github"></i></div
+              ></a>
+              <a href="" id="linkedinid"
+                ><div class="circle">
+                  <i class="fa-brands fa-linkedin-in"></i></div
+              ></a>
+            </div>
           </div>
         </div>
       </div>
