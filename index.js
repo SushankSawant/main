@@ -12,10 +12,14 @@ function dMenu() {
   sidebar.style.display = "block";
   menIcon.style.display = "none";
   clsIcon.style.display = "block";
+  sidebar.classList.add("active");
 }
 
 function cMenu() {
+  /* sidebar.classList.remove("active");
+  sidebar.classList.add("deactive"); */
   sidebar.style.display = "none";
+  sidebar.classList.add("fade-out");
   menIcon.style.display = "block";
   clsIcon.style.display = "none";
 }
