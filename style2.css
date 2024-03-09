@@ -623,7 +623,6 @@ ul a li h4 {
     /* transform: translateY(0px);   */
     left: 100px;
     z-index: 10;
-    width: 450px;
     top: 50px;
     height: auto;
   }
