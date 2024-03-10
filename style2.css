@@ -171,6 +171,7 @@ ul a li h4 {
   }
   50% {
     left: 105%;
+    width: 0%;
   }
   100% {
     left: 0;
@@ -310,7 +311,7 @@ ul a li h4 {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  align-items: ;
+  /* align-items: ; */
 }
 
 .projectscontainer a {
@@ -623,6 +624,7 @@ ul a li h4 {
     /* transform: translateY(0px);   */
     left: 100px;
     z-index: 10;
+    width: ;
     top: 50px;
     height: auto;
   }
@@ -646,7 +648,7 @@ ul a li h4 {
     display: block;
   }
 
-  .mob-sidebar .active {
+  .active {
     animation-name: fade-in;
     animation-duration: 1s;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -654,7 +656,7 @@ ul a li h4 {
     animation-fill-mode: forwards;
   }
 
-  .mob-sidebar .deactive {
+  .deactive {
     animation-name: fade-out;
     animation-duration: 1s;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -662,6 +664,31 @@ ul a li h4 {
     animation-fill-mode: forwards;
   }
 
+  .rotate {
+    animation-name: rotation;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(-90deg);
+    }
+    to {
+      transform: rotate(auto);
+    }
+  }
+
+  @keyframes unrotation {
+    from {
+      transform: rotate(auto);
+    }
+    to {
+      transform: rotate(-90deg);
+    }
+  }
   @keyframes fade-in {
     from {
       left: 0px;
@@ -679,7 +706,8 @@ ul a li h4 {
     }
     to {
       transform: scale(0.5);
-      /* opacity: 0; */
+      /* display: none; */
+      opacity: ;
     }
   }
 
@@ -744,6 +772,6 @@ ul a li h4 {
   }
 
   .intro p span::after {
-    display: none;
+    /* display: none;  */
   }
 }
