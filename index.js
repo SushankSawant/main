@@ -12,21 +12,17 @@ function dMenu() {
   sidebar.style.display = "block";
   menIcon.style.display = "none";
   clsIcon.style.display = "block";
-  sidebar.classList.remove("deactive");
-  sidebar.classList.add("active");
+
   clsIcon.classList.add("rotate");
   menIcon.classList.add("unrotate");
+  sidebar.classList.toggle("active");
 }
 
 function cMenu() {
   clsIcon.style.display = "none";
   menIcon.style.display = "block";
-  /*  sidebar.classList.add("fade-out"); */
-  sidebar.classList.add("deactive");
-  sidebar.classList.remove("active");
-  clsIcon.classList.add("rotate");
-  menIcon.classList.add("unrotate");
-  sidebar.style.display = "none";
+
   menIcon.classList.add("rotate");
   clsIcon.classList.add("unrotate");
+  sidebar.classList.remove("active");
 }
