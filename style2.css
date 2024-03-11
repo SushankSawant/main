@@ -42,10 +42,9 @@ body {
 }
 .mobsidebar {
   width: 100px;
-  display: none;
+  /* display: none; */
   /* top: 50px; */
   /* transform: translateY(-650px); */
-  transition: all 0.5s ease-in-out;
 }
 .sidebar,
 .mobsidebar {
@@ -622,11 +621,21 @@ ul a li h4 {
   .mobsidebar {
     position: absolute;
     /* transform: translateY(0px);   */
-    left: 100px;
+    left: -300px;
     z-index: 10;
     width: ;
     top: 50px;
     height: auto;
+
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0, 0.64, 0.23, 0.98);
+    /* transition: all 1s ease-in-out; */
+  }
+
+  .mobsidebar.active {
+    left: 100px;
+    opacity: 1;
   }
 
   .menuicon,
@@ -648,21 +657,21 @@ ul a li h4 {
     display: block;
   }
 
-  .active {
+  /*   .active {
     animation-name: fade-in;
     animation-duration: 1s;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-direction: normal;
     animation-fill-mode: forwards;
   }
-
-  .deactive {
+ */
+ /*  .deactive {
     animation-name: fade-out;
     animation-duration: 1s;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-direction: normal;
     animation-fill-mode: forwards;
-  }
+  } */
 
   .rotate {
     animation-name: rotation;
@@ -681,15 +690,15 @@ ul a li h4 {
     }
   }
 
-  @keyframes unrotation {
+/*   @keyframes unrotation {
     from {
       transform: rotate(auto);
     }
     to {
       transform: rotate(-90deg);
     }
-  }
-  @keyframes fade-in {
+  } */
+/*   @keyframes fade-in {
     from {
       left: 0px;
       top: 0;
@@ -709,7 +718,7 @@ ul a li h4 {
       /* display: none; */
       opacity: ;
     }
-  }
+  } */
 
   .socials {
     height: auto;
