@@ -40,6 +40,49 @@ body {
   align-items: center;
   margin-bottom: 160px;
 }
+
+.mainhome .ppp {
+  position: relative;
+}
+
+.mainhome .ppp::after {
+  content: "";
+  height: 405px;
+  width: 390px;
+  border-radius: 52% 48% 70% 30% / 52% 58% 42% 48%;
+  position: absolute;
+  background: linear-gradient(#1e7fff, #002657);
+  left: 0;
+  top: 0;
+  z-index: -1;
+  filter: blur(30px);
+  animation-name: borrad;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes borrad {
+  0% {
+    border-radius: 52% 48% 70% 30% / 52% 58% 42% 48%;
+    height: 420px;
+    height: 320px;
+    transform: translateX(10px) translateY(0px) rotate(1deg);
+  }
+
+  50% {
+    border-radius: 64% 36% 70% 30% / 44% 45% 55% 56%;
+    transform: translateX(-10px) translateY(20px) rotate(30deg);
+  }
+
+  100% {
+    border-radius: 64% 36% 42% 58% / 21% 28% 72% 79%;
+    height: 390px;
+    height: 420px;
+    transform: translateX(-20px) translateY(-30px) rotate(40deg);
+  }
+}
 .mobsidebar {
   width: 100px;
   /* display: none; */
@@ -215,6 +258,26 @@ ul a li h4 {
 .mainskill {
   margin-top: 10px;
   padding-top: 30px;
+  position: relative;
+}
+
+.mainskill::after {
+  content: "";
+  height: 405px;
+  width: 390px;
+  border-radius: 52% 48% 70% 30% / 52% 58% 42% 48%;
+  position: absolute;
+  background: linear-gradient(#3f72af, #1e7fff);
+  left: -150px;
+  top: 0;
+  /* opacity: 0.5; */
+  z-index: -1;
+  filter: blur(40px);
+  animation-name: borrad;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .mainskill:hover,
@@ -303,8 +366,27 @@ ul a li h4 {
 .mainproject {
   margin-top: 120px;
   padding-top: 30px;
+  position: relative;
 }
 
+.mainproject::after {
+  content: "";
+  height: 605px;
+  width: 490px;
+  border-radius: 52% 48% 70% 30% / 52% 58% 42% 48%;
+  position: absolute;
+  background: linear-gradient(#002657, #3f72af);
+  right: 100px;
+  bottom: 150px;
+  /* opacity: 0.5; */
+  z-index: -1;
+  filter: blur(60px);
+  animation-name: borrad;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
 .projectscontainer {
   margin-top: 40px;
   display: flex;
@@ -763,12 +845,23 @@ ul a li h4 {
       font-size: 15px;
     }
   }
+  .ppp::after,
+  .mainproject::after,
+  .mainskill::after {
+    display: none;
+  }
 }
 
 @media (max-width: 420px) {
   .intro img {
     width: 250px;
     height: 250px;
+  }
+
+  .ppp::after,
+  .mainproject::after,
+  .mainskill::after {
+    display: none;
   }
 
   .intro h1 {
