@@ -665,7 +665,7 @@ ul a li h4 {
     animation-fill-mode: forwards;
   }
  */
- /*  .deactive {
+  /*  .deactive {
     animation-name: fade-out;
     animation-duration: 1s;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -690,7 +690,7 @@ ul a li h4 {
     }
   }
 
-/*   @keyframes unrotation {
+  /*   @keyframes unrotation {
     from {
       transform: rotate(auto);
     }
@@ -698,7 +698,7 @@ ul a li h4 {
       transform: rotate(-90deg);
     }
   } */
-/*   @keyframes fade-in {
+  @keyframes fade-in {
     from {
       left: 0px;
       top: 0;
@@ -715,10 +715,10 @@ ul a li h4 {
     }
     to {
       transform: scale(0.5);
-      /* display: none; */
+      display: none;
       opacity: ;
     }
-  } */
+  }
 
   .socials {
     height: auto;
