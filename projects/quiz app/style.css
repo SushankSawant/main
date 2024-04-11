@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main {
+  background: #86469c;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  transition: 2s all ease-in-out;
+}
+
+.main h1 {
+  text-shadow: -2px 3px 1px rgb(0, 0, 0);
+  font-size: 60px;
+  font-weight: bold;
+  color: #ffcdea;
+}
+
+#box {
+  padding: 15px;
+  width: 40%;
+  box-shadow: 0px 0px 5px grey;
+  background-color: #ffcdea;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.336);
+}
+
+#box h2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #86469c;
+}
+
+.row {
+  display: inline;
+  width: 50%;
+  margin-left: 0px;
+}
+
+.btn {
+  width: 100%;
+  padding: 5px;
+  background: #fb9ad1;
+  font-size: 20px;
+  border: none;
+  border-radius: 13px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  background: #86469c;
+  color: rgb(255, 255, 255);
+}
+
+label {
+  margin: 5px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 9px;
+  display: block;
+  text-align: center;
+  color: black;
+  /* width: 100%; */
+  background: #f9b2ff;
+  transition: 0.5s all ease-in-out;
+  font-size: 20px;
+}
+
+.btn:hover,
+label:hover {
+  cursor: pointer;
+}
+.opts {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+
+.score {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+
+#resetbtn {
+  width: 50px;
+  height: 50px;
+  background: white;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+#rscore {
+  color: #16bd31;
+}
+
+#wscore {
+  color: #ff3838;
+}
+
+@media (max-width: 750px) {
+  #title {
+    font-size: 30px;
+  }
+  #box {
+    width: 55%;
+  }
+  .opts {
+    flex-direction: column;
+  }
+  .row {
+    width: 100%;
+  }
+  .score {
+    width: 50%;
+  }
+}
