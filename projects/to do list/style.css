@@ -51,6 +51,28 @@
   top: -10px;
 }
 
+.mob-sidebar {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #b4b4b4;
+  /* border-radius: 20px; */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3f72af;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #112d4e;
+}
+
 .container {
   position: relative;
   height: 500px;
@@ -59,7 +81,8 @@
   background: #eeeeee8f;
   padding: 20px;
   z-index: 2;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .container input {
