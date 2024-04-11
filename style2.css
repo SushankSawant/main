@@ -3,10 +3,16 @@
   margin: 0;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+  transition: 1s all cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 body {
   background: #dbe2ef;
+}
+
+::selection {
+  background: #ffffff;
+  color: black;
 }
 
 .topbtn {
@@ -57,7 +63,7 @@ body {
   z-index: -1;
   filter: blur(30px);
   animation-name: borrad;
-  animation-duration: 2s;
+  animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -89,6 +95,99 @@ body {
   /* top: 50px; */
   /* transform: translateY(-650px); */
 }
+
+#oTabs {
+  width: auto;
+  height: auto;
+  position: sticky;
+  top: 19px;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+
+  overflow: hidden;
+  margin-bottom: 10px;
+  transition: all 1s ease;
+  z-index: 11;
+  opacity: 0.25;
+  animation-name: opacity;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0.25;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#oTabs:hover {
+  opacity: 1;
+  width: auto;
+  height: auto;
+  left: 350px;
+
+  width: 50%;
+  cursor: pointer;
+  animation: none;
+}
+
+#oTabs:hover {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    opacity: 1;
+  }
+
+  .menus {
+    display: none;
+  }
+}
+
+.menus {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+}
+
+#oTabs h4 {
+  font-size: 20px;
+}
+
+#oTabs ul {
+  opacity: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+#oTabs ul a li {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-radius: 20px;
+  padding: 0px;
+  transition: all 0.25s ease-in-out;
+}
+
+#oTabs ul a li span {
+  display: none;
+}
+
+#oTabs ul a li:hover {
+  h4 {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}
+
 .sidebar,
 .mobsidebar {
   background: #dbe2ef;
@@ -274,7 +373,7 @@ ul a li h4 {
   z-index: -1;
   filter: blur(40px);
   animation-name: borrad;
-  animation-duration: 2s;
+  animation-duration: 3.5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -382,7 +481,7 @@ ul a li h4 {
   z-index: -1;
   filter: blur(60px);
   animation-name: borrad;
-  animation-duration: 2s;
+  animation-duration: 3.5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -647,12 +746,12 @@ ul a li h4 {
   box-shadow: 0px 0px 10px 2px #002657;
   /* background: #cd201f; */
   i {
-    color: #cd201f;
+    color: #e21717;
   }
 }
 #githubid:hover {
   transform: scale(1.25) /* translateY(-10px) */;
-  box-shadow: 0px 0px 10px 2px #002657;
+  box-shadow: 0px 0px 10px 2px #004aaa;
   /* background: #135cbb; */
   i {
     color: #002657;
@@ -660,14 +759,14 @@ ul a li h4 {
 }
 #linkedinid:hover {
   transform: scale(1.25) /* translateY(-10px) */;
-  box-shadow: 0px 0px 10px 2px #002657;
+  box-shadow: 0px 0px 10px 2px #0063e4;
   /* background: #135cbb; */
   i {
-    color: #135cbb;
+    color: #000f22;
   }
 }
 
-#instagramid::before {
+/* #instagramid::before {
   content: "Instagram";
   opacity: 0;
   background: linear-gradient(to bottom right, #f9ce34, #ee2a7b, #6228d7);
@@ -681,7 +780,7 @@ ul a li h4 {
   position: absolute;
   top: -45px;
   border-radius: 10px;
-}
+} */
 
 @media (max-width: 1250px) {
   .intro {
@@ -691,6 +790,10 @@ ul a li h4 {
 }
 
 @media (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .mainhome {
     display: flex;
     flex-direction: column;
@@ -798,7 +901,7 @@ ul a li h4 {
     to {
       transform: scale(0.5);
       display: none;
-      opacity: ;
+      opacity: 0;
     }
   }
 
