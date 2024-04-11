@@ -111,7 +111,7 @@ body {
   z-index: 11;
   opacity: 0.25;
   animation-name: opacity;
-  animation-duration: 1s;
+  animation-duration: 2.5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
