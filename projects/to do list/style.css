@@ -59,12 +59,16 @@
   background: #eeeeee8f;
   padding: 20px;
   z-index: 2;
+  overflow: scroll;
 }
 
 .container input {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
   width: 100%;
   border-radius: 20px;
-  background: rgba(0, 0, 0, 0.151);
+  background: rgba(0, 0, 0, 0.466);
   outline: none;
   border: none;
   /* padding: 15px; */
@@ -74,7 +78,7 @@
 }
 
 .container input::placeholder {
-  color: rgba(0, 0, 0, 0.404);
+  color: rgba(255, 255, 255, 0.404);
 }
 
 .container ul {
@@ -110,4 +114,12 @@
   text-decoration: line-through;
   background: #00acb57a !important;
   color: white;
+}
+
+@media (max-width: 750px) {
+  .container {
+    width: 80%;
+    height: 70vh;
+    overflow: scroll;
+  }
 }
