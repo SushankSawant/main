@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <h1 id="title">SUSHANK's QUIZ GAME! 🧠</h1>
+      <div id="box">
+        <h2 id="quesBox">1) This is a dummy question?</h2>
+        <div class="opts">
+          <div class="row">
+            <input
+              class="options"
+              id="optiona"
+              type="radio"
+              value="a"
+              name="option"
+              name="option"
+            />
+            <label for="optiona"> Option A</label>
+          </div>
+          <div class="row">
+            <input
+              class="options"
+              id="optionb"
+              type="radio"
+              value="b"
+              name="option"
+            />
+            <label for="optionb"> Option B</label>
+          </div>
+          <div class="row">
+            <input
+              class="options"
+              id="optionc"
+              type="radio"
+              value="c"
+              name="option"
+            />
+            <label for="optionc"> Option C</label>
+          </div>
+          <div class="row">
+            <input
+              class="options"
+              id="optiond"
+              type="radio"
+              value="d"
+              name="option"
+            />
+            <label for="optiond"> Option D</label>
+          </div>
+        </div>
+        <button class="btn" onclick="submitQuiz()">SUBMIT</button>
+      </div>
+      <div class="score">
+        <h1 id="rscore">0</h1>
+        <h1 id="wscore">0</h1>
+        <h1 id="tscore"></h1>
+      </div>
+      <div id="resetbtn" onclick="location.reload()">
+        <span class="material-symbols-outlined reload"> refresh </span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
