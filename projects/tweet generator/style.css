@@ -157,18 +157,12 @@ body {
 
 @media (max-width: 1111px) {
   .body-flex {
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     gap: 50px;
   }
 
   .edit-wrapper {
     width: 80%;
-  }
-
-  .tweet-wrapper {
-    position: fixed;
-    left: 0;
-    top: 0;
   }
 }
