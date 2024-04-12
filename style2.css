@@ -187,6 +187,83 @@ body {
     opacity: 1;
   }
 }
+.skilldisplay .htmli {
+  position: relative;
+}
+
+.skilldisplay .htmli::after {
+  position: absolute;
+  content: "";
+  background-image: url(images/html-5.png);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  margin-left: 10px;
+}
+.skilldisplay .cssi {
+  position: relative;
+}
+
+.skilldisplay .cssi::after {
+  position: absolute;
+  content: "";
+  background-image: url(images/css-3.png);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  margin-left: 10px;
+}
+.skilldisplay .jsi {
+  position: relative;
+}
+
+.skilldisplay .jsi::after {
+  position: absolute;
+  content: "";
+  background-image: url(images/js.png);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  margin-left: 10px;
+}
+.skilldisplay .gpci,
+.skilldisplay .vei,
+.skilldisplay .uixi {
+  position: relative;
+}
+.skilldisplay .gpci::after {
+  position: absolute;
+  content: "";
+  background-image: url(images/photoshop.png);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  margin-left: 10px;
+}
+.skilldisplay .vei::after {
+  position: absolute;
+  content: "";
+  background-image: url(images/premiere-pro.png);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  margin-left: 10px;
+}
+.skilldisplay .uixi::after {
+  position: absolute;
+  content: "";
+  background-image: url(images/figma.png);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  margin-left: 10px;
+}
 
 .sidebar,
 .mobsidebar {
