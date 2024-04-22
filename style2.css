@@ -15,6 +15,10 @@ body {
   color: black;
 }
 
+.projectscontainer .highimp {
+  display: none;
+}
+
 .topbtn {
   background: #002657;
   color: white;
@@ -1081,6 +1085,25 @@ ul a li h4 {
   .mainproject::after,
   .mainskill::after {
     display: none;
+  }
+
+  .main-proj .projectbox {
+    display: none;
+    width: 280px;
+    overflow: hidden;
+    height: auto;
+    padding: 20px;
+    background: #112d4e;
+    /* display: flex; */
+    flex-direction: row;
+    gap: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .projectscontainer .highimp {
+    display: block;
   }
 }
 
