@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>AF.COM</title>
+  </head>
+  <body>
+    <!-- PRODUCT WIDE SCREEN -->
+    <div class="preview-wrapper displaynone">
+      <d class="preview-container">
+        <span
+          class="material-symbols-outlined"
+          id="closepre"
+          onclick="closePreview()"
+        >
+          cancel
+        </span>
+        <div class="preview-image" id="pre-img">
+          <img 
+            src="images/products/Gemini_Generated_Image_4i7ml64i7ml64i7m.jpeg"
+            alt=""
+          />
+        </div>
+        <div class="preview-details">
+          <div class="preview-data">
+            <h1 id="pre-name">Gamer X1 Pro</h1>
+            <h2>₹ 79,999</h2>
+          </div>
+        </div>
+      </d iv>
+    </div>
+    <div class="alert">
+      <h1>SORRY!</h1>
+      <p>THIS SCREEN SIZE IS NOT CURRENTLY AVAILABLE</p>
+    </div>
+    <div class="notalert">
+      <div class="navbar">
+        <a href="" class="logo">SUS.CO</a>
+        <input type="text" class="searchbar" placeholder="Search Any Item" />
+        <div class="navigations">
+          <div class="login" onclick="openLogin()">
+            <span class="material-symbols-outlined"> person </span>Sign-in
+          </div>
+          <a href="orders.html" class="orders"
+            ><span class="material-symbols-outlined"> local_shipping </span
+            >Orders</a
+          >
+          <a href="" class="cart"
+            ><span class="material-symbols-outlined"> shopping_cart </span></a
+          >
+        </div>
+      </div>
+      <div class="main">
+        <div class="titleads">
+          <div class="ads">
+            <img src="images/products/TITLE.jpg" alt="BannerImageOfSALE" />
+          </div>
+        </div>
+        <div class="trendingP">
+          <div class="SECNAME">
+            <h2>TRENDING PRODUCTS</h2>
+          </div>
+          <div class="trend-prod-sec">
+            <div class="prods">
+              <img
+                src="images/products/Gemini_Generated_Image_40hyv940hyv940hy.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="prods">
+              <img
+                src="images/products/Gemini_Generated_Image_4i7ml64i7ml64i7m.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="prods">
+              <img
+                src="images/products/Gemini_Generated_Image_5z17dy5z17dy5z17.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="prods">
+              <img
+                src="images/products/Gemini_Generated_Image_5z17e15z17e15z17.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="prods">
+              <img
+                src="images/products/Gemini_Generated_Image_n75i9cn75i9cn75i.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="prods">
+              <img
+                src="images/products/Gemini_Generated_Image_nax6j2nax6j2nax6.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="prods">
+              <img
+                src="images/products/Gemini_Generated_Image_5z17e15z17e15z17.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <!-- DISCOUNTS SECTION -->
+        <div class="discount-sec">
+          <div class="SECNAME"><h1>MORE DISCOUNTS MORE FUN!</h1></div>
+          <div class="discounts">
+            <div class="distabs a"><h1>50% OFF</h1></div>
+            <div class="distabs b"><h1>60% OFF</h1></div>
+            <div class="distabs c"><h1>75% OFF</h1></div>
+          </div>
+        </div>
+      </div>
+      <!-- LOGIN FORM -->
+      <div class="loginform displaynone" id="loginfrm">
+        <form action="">
+          <span
+            class="material-symbols-outlined"
+            id="closebtn"
+            onclick="closeLogin()"
+          >
+            cancel
+          </span>
+          <h1>SIGN-IN</h1>
+          <div class="inpts">
+            <label for="name">Username</label>
+            <input
+              id="nameInp"
+              placeholder="Enter First Name Only"
+              type="text"
+              required
+            />
+          </div>
+          <div class="inpts">
+            <label for="password">Password</label>
+            <input
+              name="password"
+              placeholder="Enter Random Word"
+              type="password"
+              required
+            />
+          </div>
+          <div class="btn" onclick="nameChange()"><h3>LOGIN</h3></div>
+          <a href="#">Forgot password?</a>
+        </form>
+      </div>
+
+      <!-- popular brands -->
+      <div class="pop-brands">
+        <div class="popb-heading">
+          <h1>POPULAR BRANDS</h1>
+        </div>
+        <div class="popb-logos">
+          <div class="brands">
+            <img src="images/png-apple-logo-9713.png" alt="" />
+          </div>
+          <div class="brands">
+            <img src="images/google-logo-history-png-2598.png" alt="" />
+          </div>
+          <div class="brands">
+            <img src="images/samsung-logo-png-1304.png" alt="" />
+          </div>
+          <div class="brands">
+            <img src="images/dell-png-logo-3757.png" alt="" />
+          </div>
+          <div class="brands">
+            <img src="images/logo-asus-png-7168.png" alt="" />
+          </div>
+          <div class="brands">
+            <img src="images/nokia-logo-png-1486.png" alt="" />
+          </div>
+          <div class="brands">
+            <img src="images/picture-logo-42711.png" alt="" />
+          </div>
+          <div class="brands">
+            <img src="images/pepsi.png" alt="" />
+          </div>
+          <div class="brands">
+            <img src="images/nike.png" alt="" />
+          </div>
+        </div>
+
+        <!-- PRODUCTS SECTION -->
+        <div class="allprods">
+          <div class="categories">
+            <h3 class="cats acat">ELECTRONICS</h3>
+            <h3 class="cats">STATIONARY</h3>
+            <h3 class="cats">FASHION</h3>
+            <h3 class="cats">APPLIANCES</h3>
+            <h3 class="cats">GROCERIES</h3>
+
+            <!-- <div class="cats"><h3></h3></div> -->
+            <!-- <div class="cats"><h3></h3></div> -->
+          </div>
+          <div class="products">
+            <div class="main-prod">
+            <div class="prod">
+              <div class="image">
+                <img
+                  src="images/products/Gemini_Generated_Image_5z17dy5z17dy5z17.jpeg"
+                  alt=""
+                />
+              </div>
+              <div class="prod-details">
+                <div class="name"><h2>Gamer X1 Pro</h2></div>
+                <div class="feature">
+                  <h3>₹79,999</h3>
+                  <div class="rating">4.1 ⭐</div>
+                </div>
+              </div>
+            </div>
+            <div class="Addbtn"><h3>Add To Cart</h3></div>
+            </div>
+            <div class="main-prod">
+            <div class="prod">
+              <div class="image">
+                <img
+                  src="images/products/Gemini_Generated_Image_5z17dx5z17dx5z17.jpeg"
+                  alt=""
+                />
+              </div>
+              <div class="prod-details">
+                <div class="name"><h2>Gamer X1 Pro</h2></div>
+                <div class="feature">
+                  <h3>₹79,999</h3>
+                  <div class="rating">4.1 ⭐</div>
+                </div>
+              </div>
+            </div>
+            <div class="Addbtn"><h3>Add To Cart</h3></div>
+            </div>
+            <div class="main-prod">
+            <div class="prod">
+              <div class="image">
+                <img
+                  src="images/products/Gemini_Generated_Image_40hyv940hyv940hy.jpeg"
+                  alt=""
+                />
+              </div>
+              <div class="prod-details">
+                <div class="name"><h2>Gamer X1 Pro</h2></div>
+                <div class="feature">
+                  <h3>₹79,999</h3>
+                  <div class="rating">4.1 ⭐</div>
+                </div>
+              </div>
+            </div>
+            <div class="Addbtn"><h3>Add To Cart</h3></div>
+            </div>
+            <div class="main-prod">
+            <div class="prod">
+              <div class="image">
+                <img
+                  src="images/products/Gemini_Generated_Image_5z17e15z17e15z17.jpeg"
+                  alt=""
+                />
+              </div>
+              <div class="prod-details">
+                <div class="name"><h2>Gamer X1 Pro</h2></div>
+                <div class="feature">
+                  <h3>₹79,999</h3>
+                  <div class="rating">4.1 ⭐</div>
+                </div>
+              </div>
+            </div>
+            <div class="Addbtn"><h3>Add To Cart</h3></div>
+            </div>
+            <div class="main-prod">
+            
+            <div class="prod">
+              <div class="image">
+                <img
+                  src="images/products/Gemini_Generated_Image_nax6j2nax6j2nax6.jpeg"
+                  alt=""
+                />
+              </div>
+              <div class="prod-details">
+                <div class="name"><h2>Gamer X1 Pro</h2></div>
+                <div class="feature">
+                  <h3>₹79,999</h3>
+                  <div class="rating">4.1 ⭐</div>
+                </div>
+              </div>
+            </div>
+            <div class="Addbtn"><h3>Add To Cart</h3></div>
+            </div>
+            <div class="main-prod">
+            <div class="prod">
+              <div class="image">
+                <img
+                  src="images/products/Gemini_Generated_Image_n75i9cn75i9cn75i.jpeg"
+                  alt=""
+                />
+              </div>
+              <div class="prod-details">
+                <div class="name"><h2>Gamer X1 Pro</h2></div>
+                <div class="feature">
+                  <h3>₹79,999</h3>
+                  <div class="rating">4.1 ⭐</div>
+                </div>
+              </div>
+            </div>
+            <div class="Addbtn"><h3>Add To Cart</h3></div>
+            </div>
+            <div class="main-prod">
+            <div class="prod">
+              <div class="image">
+                <img
+                  src="images/products/Gemini_Generated_Image_5z17e15z17e15z17.jpeg"
+                  alt=""
+                />
+              </div>
+              <div class="prod-details">
+                <div class="name"><h2>Gamer X1 Pro</h2></div>
+                <div class="feature">
+                  <h3>₹79,999</h3>
+                  <div class="rating">4.1 ⭐</div>
+                </div>
+              </div>
+            </div>
+            <div class="Addbtn"><h3>ADD TO CART</h3></div>
+            </div>
+            <div class="main-prod">
+            <div class="prod">
+              <div class="image">
+                <img
+                  src="images/products/Gemini_Generated_Image_5z17dy5z17dy5z17.jpeg"
+                  alt=""
+                />
+              </div>
+              <div class="prod-details">
+                <div class="name"><h2>Gamer X1 Pro</h2></div>
+                <div class="feature">
+                  <h3>₹79,999</h3>
+                  <div class="rating">4.1 ⭐</div>
+                </div>
+              </div>
+            </div>
+            <div class="Addbtn"><h3>Add To Cart</h3></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

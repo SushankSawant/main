@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>AF.COM</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html" class="logo">SUS.CO</a>
+      <input type="text" class="searchbar" placeholder="Search Any Item" />
+      <div class="navigations">
+       <!--  <div class="login" onclick="openLogin()">
+          <span class="material-symbols-outlined"> person </span>Profile
+        </div> -->
+        <a href="index.html" class="orders"
+          ><span class="material-symbols-outlined"> home </span>Home</a
+        >
+        <a href="" class="cart"
+          ><span class="material-symbols-outlined"> shopping_cart </span></a
+        >
+      </div>
+    </div>
+    <!-- LOGIN FORM -->
+    <div class="loginform displaynone" id="loginfrm">
+      <form action="">
+        <span
+          class="material-symbols-outlined"
+          id="closebtn"
+          onclick="closeLogin()"
+        >
+          cancel
+        </span>
+        <h1>LOGIN</h1>
+        <div class="inpts">
+          <label for="name">Email/Phone</label>
+          <input name="name" type="email" required />
+        </div>
+        <div class="inpts">
+          <label for="password">Password</label>
+          <input name="password" type="password" required />
+        </div>
+        <button>LOGIN</button>
+        <a href="#">Forgot password?</a>
+      </form>
+    </div>
+    <div class="main">
+      <h1 class="order-head">ORDERS</h1>
+      <div class="order-container">
+        <div class="order-image">
+          <img
+            src="images/products/Gemini_Generated_Image_40hyv940hyv940hy.jpeg"
+            alt=""
+          />
+        </div>
+        <div class="order-details">
+          <div class="order-data">
+            <h3>#ORDER 1</h3>
+            <h1>Gamer X1 Pro</h1>
+            <h2>₹ 79,999</h2>
+            <h3>PAYMENT MODE: UPI</h3>
+            <h3>DELIVERY AT: 21/HIRANANDANI, POWAI, MUMBAI- XXX</h3>
+          </div>
+          <div class="order-status">
+            <h2>ORDER STATUS:</h2>
+            <h1>ORDER PACKED</h1>
+          </div>
+        </div>
+      </div>
+      <div class="order-container">
+        <div class="order-image">
+          <img
+            src="images/products/Gemini_Generated_Image_4i7ml64i7ml64i7m.jpeg"
+            alt=""
+          />
+        </div>
+        <div class="order-details">
+          <div class="order-data">
+            <h3>#ORDER 1</h3>
+            <h1>Gamer X1 Pro</h1>
+            <h2>₹ 79,999</h2>
+            <h3>PAYMENT MODE: COD</h3>
+            <h3>DELIVERY AT: 21/HIRANANDANI, POWAI, MUMBAI- XXX</h3>
+          </div>
+          <div class="order-status">
+            <h2>ORDER STATUS:</h2>
+            <h1>DISPATCHED</h1>
+          </div>
+        </div>
+      </div>
+      <div class="order-container">
+        <div class="order-image">
+          <img
+            src="images/products/Gemini_Generated_Image_5z17dx5z17dx5z17.jpeg"
+            alt=""
+          />
+        </div>
+        <div class="order-details">
+          <div class="order-data">
+            <h3>#ORDER 1</h3>
+            <h1>Gamer X1 Pro</h1>
+            <h2>₹ 79,999</h2>
+            <h3>PAYMENT MODE: CREDIT CARD</h3>
+            <h3>DELIVERY AT: 21/HIRANANDANI, POWAI, MUMBAI- XXX</h3>
+          </div>
+          <div class="order-status">
+            <h2>ORDER STATUS:</h2>
+            <h1>ORDER PLACED</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
