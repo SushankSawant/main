@@ -11,6 +11,10 @@ body {
   scroll-behavior: smooth;
 }
 
+.main {
+  position: relative;
+}
+
 ::selection {
   background: #00adb5;
 }
@@ -197,9 +201,12 @@ a {
     background-color: #32323227;
     overflow: hidden;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.644);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img {
       /* border-radius: 20px; */
-      width: 100%;
+      width: 126%;
       object-fit: cover;
       transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
     }
@@ -223,9 +230,9 @@ a {
   margin-bottom: 30px;
   margin-top: 60px;
 
-  h2 {
-    font-size: 40px;
-    /* width: 320px; */
+  .SECNAME {
+    font-size: 20px;
+    width: 410px;
     height: 320px;
     /* width: 25%; */
     background: #323232;
@@ -233,9 +240,10 @@ a {
     font-weight: 900;
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
     border-radius: 20px;
-    width: 100%;
+    /* width: 100%; */
     opacity: 1;
     margin: 0;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.644);
@@ -245,6 +253,8 @@ a {
     overflow-x: scroll;
     display: flex;
     gap: 10px;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: start;
   }
 
   .prods {
@@ -296,9 +306,10 @@ a {
   background-size: cover;
   color: white;
   text-shadow: 2px 2px 1px #00adb5;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.473);
   transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
   &:hover {
-    transform: scale(1.3) rotate(-10deg);
+    /* transform: scale(1.3) rotate(-10deg); */
     box-shadow: 5px 5px 20px black;
     cursor: pointer;
   }
@@ -309,9 +320,10 @@ a {
   background-size: cover;
   color: white;
   text-shadow: 2px 2px 1px #00adb5;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.473);
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   &:hover {
-    transform: scale(1.3) rotate(-10deg);
+    /* transform: scale(1.3) rotate(-10deg); */
     box-shadow: 5px 5px 20px black;
     cursor: pointer;
   }
@@ -321,10 +333,11 @@ a {
   background: url(images/products/Gemini_Generated_Image_nax6j2nax6j2nax6.jpeg);
   background-size: cover;
   color: white;
-  text-shadow: 2px 2px 1px #00adb5;
+  text-shadow: 2px 5px 1px #00adb5;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.473);
   transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
   &:hover {
-    transform: scale(1.3) rotate(-10deg);
+    /* transform: scale(1.3) rotate(-10deg); */
     box-shadow: 5px 5px 20px black;
     cursor: pointer;
   }
@@ -347,7 +360,9 @@ a {
 
 .loginform {
   position: fixed;
-  background: #ffffff6e;
+  /* background: #ffffff6e; */
+  backdrop-filter: blur(5px);
+
   /* top: 50%; */
   /* left: 50%; */
   top: 0;
@@ -482,7 +497,7 @@ a {
 }
 
 .brands:hover {
-  background: #2228313a;
+  background: #2228312f;
 
   img {
     transform: scale(1.5);
@@ -567,6 +582,8 @@ a {
     height: 209px;
     /* margin-bottom: 40px; */
     img {
+      object-fit: cover;
+      height: 280px;
       border-radius: 16px;
       width: 100%;
     }
@@ -621,14 +638,19 @@ a {
   h3 {
     text-transform: uppercase;
   }
+
+  span {
+    font-weight: bold;
+    font-size: 35px;
+  }
   &:hover {
     /* transform: scale(0.9); */
     background-color: #323232;
     color: #00adb5;
 
-    h3 {
-      /* transform: scale(1.1); */
-    }
+    /* h3 { */
+    /* transform: scale(1.1); */
+    /* } */
   }
 }
 /* ORDER PAGE */
@@ -692,9 +714,10 @@ a {
 .preview-wrapper {
   position: fixed;
   left: 0px;
-  /* top: 0px; */
+  top: 0;
   z-index: 2;
-  background-color: #00acb571;
+  background-color: #22283191;
+  backdrop-filter: blur(5px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -702,9 +725,28 @@ a {
   width: 100%;
   transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
+.hide {
+  display: fixed;
+  right: -100%;
+  top: 0;
+  transform: scale(0);
+}
+
+/* .preview-wrapper::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  filter: blur(10px);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+ */
 .preview-container {
   transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
-  background: #ffffff;
+  background: #ffffffc9;
   position: relative;
   /* top: 50%; */
   /* left: 50%; */
@@ -721,11 +763,12 @@ a {
     top: 30px;
     font-size: 40px;
     right: 30px;
+    cursor: pointer;
   }
 
-  .preview-image {
+  .image {
     border-radius: 15px;
-    width: 40%;
+    width: 50%;
     overflow: hidden;
     /* margin: 20px; */
 
@@ -733,21 +776,49 @@ a {
       object-fit: contain;
       width: 100%;
     }
+  }
 
-    .preview-details {
+  .prod-details {
+    /* display: flex; */
+    width: 35%;
+    /* background: #270000; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .name {
+      font-size: 35px;
+    }
+
+    .feature {
+      background-color: #222831;
+      padding: 30px;
+      border-radius: 20px;
+      color: #fff;
+      font-size: 35px;
+      justify-content: space-around;
       display: flex;
-      width: 80%;
-      /* background: #270000; */
-      justify-content: space-between;
+      flex-direction: column;
       align-items: center;
+      gap: 20px;
+      h3 {
+        margin: 0;
+      }
 
-      .preview-status {
+      .rating {
+        font-size: 28px;
+      }
+    }
+
+    /*   .preview-status {
         width: 35%;
         h1 {
           color: #00b83e;
         }
       }
-    }
+    } */
   }
 }
 
