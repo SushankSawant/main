@@ -20,7 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>AF.COM</title>
+    <title>SUSH.COM</title>
   </head>
   <body>
     <div class="preview-main"></div>
@@ -52,29 +52,82 @@
       <h1>SORRY!</h1>
       <p>THIS SCREEN SIZE IS NOT CURRENTLY AVAILABLE</p>
     </div>
-    <div class="notalert">
-      <div class="navbar">
-        <a href="" class="logo">SUS.CO</a>
-        <input type="text" class="searchbar" placeholder="Search Any Item" />
-        <div class="navigations">
-          <div class="login" onclick="openLogin()">
-            <span class="material-symbols-outlined"> person </span>Sign in
-          </div>
-          <a href="orders.html" class="orders"
-            ><span class="material-symbols-outlined"> local_shipping </span
-            >Orders</a
-          >
-          <a href="" class="cart"
-            ><span class="material-symbols-outlined"> shopping_cart </span></a
-          >
+<!--     <div id="cartPre" class="cart-pre">
+        <h1>Cart</h1><span
+        class="material-symbols-outlined"
+        id="closebtn"
+        onclick="closeCart()"
+      >
+        cancel
+      </span>
+      </div> -->
+    <div class="navbar">
+      <a href="" class="logo">Sush.Co</a>
+      <input type="text" class="searchbar" placeholder="Search Any Item" />
+      <div class="navigations">
+        <div class="login" onclick="openLogin()">
+          <span class="material-symbols-outlined"> person </span>Sign in
         </div>
+        <a href="orders.html" class="orders"
+          ><span class="material-symbols-outlined"> local_shipping </span
+          >Orders</a
+        >
+        <div class="cart" onclick="openCart()">
+          <span class="material-symbols-outlined"> shopping_cart </span>
+        </div>
+        </div>
+        
       </div>
+    <!-- <div class="notalert">
+      
+      </div> -->
+      
       <div class="main">
-        <div class="titleads">
-          <div class="ads">
-
-              <img src="images/products/TITLE.jpg" alt="BannerImageOfSALE" />
+     <!--    <div id="cartPre" class="cart-pre">
+          <h1>Cart</h1><span
+          class="material-symbols-outlined"
+          id="closebtn"
+          onclick="closeCart()"
+        >
+          cancel
+        </span>
+        </div>   -->
+        <div class="slider">
+          <div class="slides">
+            <!-- <img src="images/products/TITLE.jpg" alt="BannerImageOfSALE" /> -->
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <input type="radio" name="radio-btn" id="radio4" />
+            <div class="slide first">
+              <img src="images/products/TITLE1.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/products/TITLE2.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/products/TITLE3.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/products/TITLE4.jpg" alt="" />
+            </div>
+            <!-- navigation auto -->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+            <!-- navigation auto -->
           </div>
+          <!-- manual nav -->
+          <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+          <!-- manual nav -->
         </div>
         <div class="trendingP">
           <div class="SECNAME">
@@ -135,6 +188,76 @@
           </div>
         </div>
       </div>
+
+      <!-- cart -->
+      <div id="cartPre" class="cart-pre">
+        <h1>Cart</h1><span
+        class="material-symbols-outlined"
+        id="closebtn"
+        onclick="closeCart()"
+      >
+        cancel
+      </span>
+      <div class="item-wrapper">
+        <div class="cart-item">
+          <img src="images/products/Gemini_Generated_Image_40hyv940hyv940hy.jpeg" alt="">
+          <h3>PROD NAME</h3>
+          <h3 class="price">₹500</h3>
+          <div class="counter">
+            <button><span class="material-symbols-outlined">
+              chevron_left
+              </span></button>
+            <h3>1</h3>
+            <button><span class="material-symbols-outlined">
+              chevron_right
+              </span></button>
+          </div>
+        </div>
+        <div class="cart-item">
+          <img src="images/products/fashion/pexels-spencer-selover-142259-428340.jpg" alt="">
+          <h3>PROD NAME</h3>
+          <h3 class="price">₹500</h3>
+          <div class="counter">
+            <button><span class="material-symbols-outlined">
+              chevron_left
+              </span></button>
+            <h3>1</h3>
+            <button><span class="material-symbols-outlined">
+              chevron_right
+              </span></button>
+          </div>
+        </div>
+        <div class="cart-item">
+          <img src="images/products/Gemini_Generated_Image_5z17dx5z17dx5z17.jpeg" alt="">
+          <h3>PROD NAME</h3>
+          <h3 class="price">₹500</h3>
+          <div class="counter">
+            <button><span class="material-symbols-outlined">
+              chevron_left
+              </span></button>
+            <h3>1</h3>
+            <button><span class="material-symbols-outlined">
+              chevron_right
+              </span></button>
+          </div>
+        </div>
+        <div class="cart-item">
+          <img src="images/products/fashion/pexels-moose-photos-170195-1036623.jpg" alt="">
+          <h3>PROD NAME</h3>
+          <h3 class="price">₹500</h3>
+          <div class="counter">
+            <button><span class="material-symbols-outlined">
+              chevron_left
+              </span></button>
+            <h3>1</h3>
+            <button><span class="material-symbols-outlined">
+              chevron_right
+              </span></button>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- cart -->
       <!-- LOGIN FORM -->
       <div class="loginform displaynone" id="loginfrm">
         <form action="">
@@ -164,7 +287,9 @@
               required
             />
           </div>
-          <div class="btn" onclick="nameChange()"><h3>LOGIN</h3></div>
+          <div class="btn" id="loginbtn" onclick="nameChange()">
+            <h3>LOGIN</h3>
+          </div>
           <a href="#">Forgot password?</a>
         </form>
       </div>
@@ -206,17 +331,19 @@
 
         <!-- PRODUCTS SECTION -->
         <div class="allprods">
-          <div class="categories">
-            <h3 class="cats acat">ELECTRONICS</h3>
-            <h3 class="cats">STATIONARY</h3>
-            <h3 class="cats">FASHION</h3>
-            <h3 class="cats">APPLIANCES</h3>
-            <h3 class="cats">GROCERIES</h3>
-
+          <nav class="categories">
+            <ul>
+              <a href="#electronics"><h3 class="cats acat">ELECTRONICS</h3></a>
+              <a href="#fashion"><h3 class="cats">FASHION</h3></a>
+              <h3 class="cats">STATIONARY</h3>
+              <h3 class="cats">APPLIANCES</h3>
+              <h3 class="cats">GROCERIES</h3>
+            </ul>
             <!-- <div class="cats"><h3></h3></div> -->
             <!-- <div class="cats"><h3></h3></div> -->
-          </div>
+          </nav>
           <div id="electronics">
+            <!-- <h1>ELECTRONICS</h1> -->
             <div class="products">
               <div class="main-prod">
                 <div class="prod">
