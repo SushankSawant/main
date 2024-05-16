@@ -3,645 +3,455 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <title>PORTFOLIO</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&display=swap"
       rel="stylesheet"
     />
-    <title>SUSH.COM</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="style2.css" />
   </head>
   <body>
-    <div class="preview-main"></div>
-    <!-- PRODUCT WIDE SCREEN -->
-    <!-- <div class="preview-wrapper">
-      <div class="preview-container">
-        <span
-          class="material-symbols-outlined"
-          id="closepre"
-          onclick="closePreview()"
-        >
-          cancel
-        </span>
-        <div class="preview-image" id="pre-img">
-          <img 
-            src="images/products/Gemini_Generated_Image_4i7ml64i7ml64i7m.jpeg"
-            alt=""
-          />
-        </div>
-        <div class="preview-details">
-          <div class="preview-data">
-            <h1 id="pre-name">Gamer X1 Pro</h1>
-            <h2>₹ 79,999</h2>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <div class="alert">
-      <h1>SORRY!</h1>
-      <p>THIS SCREEN SIZE IS NOT CURRENTLY AVAILABLE</p>
-    </div>
-<!--     <div id="cartPre" class="cart-pre">
-        <h1>Cart</h1><span
-        class="material-symbols-outlined"
-        id="closebtn"
-        onclick="closeCart()"
-      >
-        cancel
+    <div class="mob-sidebar">
+      <span class="material-symbols-outlined menuicon" onclick="dMenu()">
+        menu
       </span>
-      </div> -->
-    <div class="navbar">
-      <a href="" class="logo">Sush.Co</a>
-      <input type="text" class="searchbar" placeholder="Search Any Item" />
-      <div class="navigations">
-        <div class="login" onclick="openLogin()">
-          <span class="material-symbols-outlined"> person </span>Sign in
-        </div>
-        <a href="orders.html" class="orders"
-          ><span class="material-symbols-outlined"> local_shipping </span
-          >Orders</a
-        >
-        <div class="cart" onclick="openCart()">
-          <span class="material-symbols-outlined"> shopping_cart </span>
-        </div>
-        </div>
-        
-      </div>
-    <!-- <div class="notalert">
-      
-      </div> -->
-      
-      <div class="main">
-     <!--    <div id="cartPre" class="cart-pre">
-          <h1>Cart</h1><span
-          class="material-symbols-outlined"
-          id="closebtn"
-          onclick="closeCart()"
-        >
-          cancel
-        </span>
-        </div>   -->
-        <div class="slider">
-          <div class="slides">
-            <!-- <img src="images/products/TITLE.jpg" alt="BannerImageOfSALE" /> -->
-            <input type="radio" name="radio-btn" id="radio1" />
-            <input type="radio" name="radio-btn" id="radio2" />
-            <input type="radio" name="radio-btn" id="radio3" />
-            <input type="radio" name="radio-btn" id="radio4" />
-            <div class="slide first">
-              <img src="images/products/TITLE1.jpg" alt="" />
-            </div>
-            <div class="slide">
-              <img src="images/products/TITLE2.jpg" alt="" />
-            </div>
-            <div class="slide">
-              <img src="images/products/TITLE3.jpg" alt="" />
-            </div>
-            <div class="slide">
-              <img src="images/products/TITLE4.jpg" alt="" />
-            </div>
-            <!-- navigation auto -->
-            <div class="navigation-auto">
-              <div class="auto-btn1"></div>
-              <div class="auto-btn2"></div>
-              <div class="auto-btn3"></div>
-              <div class="auto-btn4"></div>
-            </div>
-            <!-- navigation auto -->
-          </div>
-          <!-- manual nav -->
-          <div class="navigation-manual">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-          </div>
-          <!-- manual nav -->
-        </div>
-        <div class="trendingP">
-          <div class="SECNAME">
-            <h2>HERO PRODUCTS</h2>
-          </div>
-          <div class="trend-prod-sec">
-            <div class="prods">
-              <img
-                src="images/products/Gemini_Generated_Image_40hyv940hyv940hy.jpeg"
-                alt=""
-              />
-            </div>
-            <div class="prods">
-              <img
-                src="images/products/Gemini_Generated_Image_4i7ml64i7ml64i7m.jpeg"
-                alt=""
-              />
-            </div>
-            <div class="prods">
-              <img
-                src="images/products/Gemini_Generated_Image_5z17dy5z17dy5z17.jpeg"
-                alt=""
-              />
-            </div>
-            <div class="prods">
-              <img
-                src="images/products/fashion/pexels-mstudio-360817-1240892.jpg"
-                alt=""
-              />
-            </div>
-            <div class="prods">
-              <img
-                src="images/products/Gemini_Generated_Image_n75i9cn75i9cn75i.jpeg"
-                alt=""
-              />
-            </div>
-            <div class="prods">
-              <img
-                src="images/products/fashion/pexels-webdonut-19090.jpg"
-                alt=""
-              />
-            </div>
-            <div class="prods">
-              <img
-                src="images/products/Gemini_Generated_Image_5z17e15z17e15z17.jpeg"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-        <!-- DISCOUNTS SECTION -->
-        <div class="discount-sec">
-          <div class="SECNAME"><h1>MORE DISCOUNTS MORE FUN!</h1></div>
-          <div class="discounts">
-            <div class="distabs a"><h1>50% OFF</h1></div>
-            <div class="distabs b"><h1>60% OFF</h1></div>
-            <div class="distabs c"><h1>75% OFF</h1></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- cart -->
-      <div id="cartPre" class="cart-pre">
-        <h1>Cart</h1><span
-        class="material-symbols-outlined"
-        id="closebtn"
-        onclick="closeCart()"
-      >
-        cancel
+      <span class="material-symbols-outlined closeicon" onclick="cMenu()">
+        close
       </span>
-      <div class="item-wrapper">
-        <div class="cart-item">
-          <img src="images/products/Gemini_Generated_Image_40hyv940hyv940hy.jpeg" alt="">
-          <h3>PROD NAME</h3>
-          <h3 class="price">₹500</h3>
-          <div class="counter">
-            <button><span class="material-symbols-outlined">
-              chevron_left
-              </span></button>
-            <h3>1</h3>
-            <button><span class="material-symbols-outlined">
-              chevron_right
-              </span></button>
-          </div>
-        </div>
-        <div class="cart-item">
-          <img src="images/products/fashion/pexels-spencer-selover-142259-428340.jpg" alt="">
-          <h3>PROD NAME</h3>
-          <h3 class="price">₹500</h3>
-          <div class="counter">
-            <button><span class="material-symbols-outlined">
-              chevron_left
-              </span></button>
-            <h3>1</h3>
-            <button><span class="material-symbols-outlined">
-              chevron_right
-              </span></button>
-          </div>
-        </div>
-        <div class="cart-item">
-          <img src="images/products/Gemini_Generated_Image_5z17dx5z17dx5z17.jpeg" alt="">
-          <h3>PROD NAME</h3>
-          <h3 class="price">₹500</h3>
-          <div class="counter">
-            <button><span class="material-symbols-outlined">
-              chevron_left
-              </span></button>
-            <h3>1</h3>
-            <button><span class="material-symbols-outlined">
-              chevron_right
-              </span></button>
-          </div>
-        </div>
-        <div class="cart-item">
-          <img src="images/products/fashion/pexels-moose-photos-170195-1036623.jpg" alt="">
-          <h3>PROD NAME</h3>
-          <h3 class="price">₹500</h3>
-          <div class="counter">
-            <button><span class="material-symbols-outlined">
-              chevron_left
-              </span></button>
-            <h3>1</h3>
-            <button><span class="material-symbols-outlined">
-              chevron_right
-              </span></button>
-          </div>
-        </div>
-      </div>
-      </div>
-      <!-- cart -->
-      <!-- LOGIN FORM -->
-      <div class="loginform displaynone" id="loginfrm">
-        <form action="">
-          <span
-            class="material-symbols-outlined"
-            id="closebtn"
-            onclick="closeLogin()"
+      <div class="mobsidebar" id="sidebar">
+        <ul>
+          <a href=""
+            ><li id="active">
+              <h4>home</h4>
+              <span class="material-symbols-outlined"> home </span>
+            </li></a
           >
-            cancel
-          </span>
-          <h1>SIGN-IN</h1>
-          <div class="inpts">
-            <label for="name">Username</label>
-            <input
-              id="nameInp"
-              placeholder="Enter First Name Only"
-              type="text"
-              required
-            />
-          </div>
-          <div class="inpts">
-            <label for="password">Password</label>
-            <input
-              name="password"
-              placeholder="Enter Random Word"
-              type="password"
-              required
-            />
-          </div>
-          <div class="btn" id="loginbtn" onclick="nameChange()">
-            <h3>LOGIN</h3>
-          </div>
-          <a href="#">Forgot password?</a>
-        </form>
+          <a href="#skill"
+            ><li>
+              <h4>skill</h4>
+              <span class="material-symbols-outlined"> code </span>
+            </li></a
+          >
+          <a href="#projectmain"
+            ><li>
+              <h4>projects</h4>
+              <span class="material-symbols-outlined"> web </span>
+            </li></a
+          >
+          <a href="#about"
+            ><li>
+              <h4>about</h4>
+              <span class="material-symbols-outlined"> account_circle </span>
+            </li></a
+          >
+          <a href=""
+            ><li>
+              <h4>resume</h4>
+              <span class="material-symbols-outlined"> download </span>
+            </li></a
+          >
+        </ul>
       </div>
+    </div>
 
-      <!-- popular brands -->
-      <div class="pop-brands">
-        <div class="popb-heading">
-          <h1>POPULAR BRANDS</h1>
+    <!-- home section -->
+    <div class="mainhome" id="home">
+      <div class="sidebar">
+        <ul>
+          <a href=""
+            ><li id="active">
+              <h4>home</h4>
+              <span class="material-symbols-outlined"> home </span>
+            </li></a
+          >
+          <a href="#skill"
+            ><li>
+              <h4>skill</h4>
+              <span class="material-symbols-outlined"> code </span>
+            </li></a
+          >
+          <a href="#projectmain"
+            ><li>
+              <h4>projects</h4>
+              <span class="material-symbols-outlined"> web </span>
+            </li></a
+          >
+          <a href="#about"
+            ><li>
+              <h4>about</h4>
+              <span class="material-symbols-outlined"> account_circle </span>
+            </li></a
+          >
+          <a href=""
+            ><li>
+              <h4>resume</h4>
+              <span class="material-symbols-outlined"> download </span>
+            </li></a
+          >
+        </ul>
+      </div>
+      <div class="intro">
+        <div class="details">
+          <h1 class="mainh1">sushank</h1>
+          <h1 class="sech1">sawant</h1>
+          <p>i am a <span></span></p>
         </div>
-        <div class="popb-logos">
-          <div class="brands">
-            <img src="images/png-apple-logo-9713.png" alt="" />
-          </div>
-          <div class="brands">
-            <img src="images/google-logo-history-png-2598.png" alt="" />
-          </div>
-          <div class="brands">
-            <img src="images/samsung-logo-png-1304.png" alt="" />
-          </div>
-          <div class="brands">
-            <img src="images/dell-png-logo-3757.png" alt="" />
-          </div>
-          <div class="brands">
-            <img src="images/logo-asus-png-7168.png" alt="" />
-          </div>
-          <div class="brands">
-            <img src="images/nokia-logo-png-1486.png" alt="" />
-          </div>
-          <div class="brands">
-            <img src="images/picture-logo-42711.png" alt="" />
-          </div>
-          <div class="brands">
-            <img src="images/pepsi.png" alt="" />
-          </div>
-          <div class="brands">
-            <img src="images/nike.png" alt="" />
-          </div>
+        <div class="ppp"><img src="images/2.jpg" alt="" width="100px" /></div>
+      </div>
+    </div>
+    <!-- home section end -->
+    <div class="othersections">
+      <div class="sidebar" id="oTabs">
+        <span class="material-symbols-outlined menus"> menu </span>
+        <ul>
+          <a href=""
+            ><li>
+              <h4>home</h4>
+              <span class="material-symbols-outlined"> home </span>
+            </li></a
+          >
+          <a href="#skill"
+            ><li>
+              <h4>skill</h4>
+              <span class="material-symbols-outlined"> code </span>
+            </li></a
+          >
+          <a href="#projectmain"
+            ><li>
+              <h4>projects</h4>
+              <span class="material-symbols-outlined"> web </span>
+            </li></a
+          >
+          <a href="#about"
+            ><li>
+              <h4>about</h4>
+              <span class="material-symbols-outlined"> account_circle </span>
+            </li></a
+          >
+          <!-- <a href=""
+            ><li>
+              <h4>resume</h4>
+              <span class="material-symbols-outlined"> download </span>
+            </li></a
+          > -->
+        </ul>
+      </div>
+      <!-- skill section start -->
+      <div class="mainskill" id="skill">
+        <!-- <a href="#home"><div class="topbtn">TOP🔼</div></a> -->
+        <div class="skilltitle">
+          <h1>&lt; skills /&gt;</h1>
         </div>
-
-        <!-- PRODUCTS SECTION -->
-        <div class="allprods">
-          <nav class="categories">
-            <ul>
-              <a href="#electronics"><h3 class="cats acat">ELECTRONICS</h3></a>
-              <a href="#fashion"><h3 class="cats">FASHION</h3></a>
-              <h3 class="cats">STATIONARY</h3>
-              <h3 class="cats">APPLIANCES</h3>
-              <h3 class="cats">GROCERIES</h3>
-            </ul>
-            <!-- <div class="cats"><h3></h3></div> -->
-            <!-- <div class="cats"><h3></h3></div> -->
-          </nav>
-          <div id="electronics">
-            <!-- <h1>ELECTRONICS</h1> -->
-            <div class="products">
-              <div class="main-prod">
-                <div class="prod">
-                  <div class="image">
-                    <img
-                      src="images/products/Gemini_Generated_Image_5z17dy5z17dy5z17.jpeg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="prod-details">
-                    <div class="name"><h2>Gamer X1 Pro</h2></div>
-                    <div class="feature">
-                      <h3>₹79,999</h3>
-                      <div class="rating">4.1⭐</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="Addbtn"><h3>Add To Cart</h3></div>
+        <div class="skillsec">
+          <div class="skilltype"><h1>web devlopement</h1></div>
+          <div class="skillbox">
+            <div class="skilldisplay">
+              <h1 class="htmli">html</h1>
+              <div class="progressbarback">
+                <div class="progress" id="html"></div>
               </div>
-              <div class="main-prod">
-                <div class="prod">
-                  <div class="image">
-                    <img
-                      src="images/products/Gemini_Generated_Image_5z17dx5z17dx5z17.jpeg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="prod-details">
-                    <div class="name"><h2>Kanon 500</h2></div>
-                    <div class="feature">
-                      <h3>₹1,09,999</h3>
-                      <div class="rating">4.9 ⭐</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="Addbtn"><h3>Add To Cart</h3></div>
+            </div>
+            <div class="skilldisplay">
+              <h1 class="cssi">css</h1>
+              <div class="progressbarback">
+                <div class="progress" id="css"></div>
               </div>
-              <div class="main-prod">
-                <div class="prod">
-                  <div class="image">
-                    <img
-                      src="images/products/Gemini_Generated_Image_40hyv940hyv940hy.jpeg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="prod-details">
-                    <div class="name"><h2>Flip S200</h2></div>
-                    <div class="feature">
-                      <h3>₹1,50,000</h3>
-                      <div class="rating">4.8 ⭐</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="Addbtn"><h3>Add To Cart</h3></div>
-              </div>
-              <div class="main-prod">
-                <div class="prod">
-                  <div class="image">
-                    <img
-                      src="images/products/Gemini_Generated_Image_5z17e15z17e15z17.jpeg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="prod-details">
-                    <div class="name"><h2>Samson Y15</h2></div>
-                    <div class="feature">
-                      <h3>₹64,999</h3>
-                      <div class="rating">4.2 ⭐</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="Addbtn"><h3>Add To Cart</h3></div>
-              </div>
-              <div class="main-prod">
-                <div class="prod">
-                  <div class="image">
-                    <img
-                      src="images/products/Gemini_Generated_Image_nax6j2nax6j2nax6.jpeg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="prod-details">
-                    <div class="name"><h2>Razor TV X4</h2></div>
-                    <div class="feature">
-                      <h3>₹65,999</h3>
-                      <div class="rating">4.1 ⭐</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="Addbtn"><h3>Add To Cart</h3></div>
-              </div>
-              <div class="main-prod">
-                <div class="prod">
-                  <div class="image">
-                    <img
-                      src="images/products/Gemini_Generated_Image_n75i9cn75i9cn75i.jpeg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="prod-details">
-                    <div class="name"><h2>All-Round CCTV</h2></div>
-                    <div class="feature">
-                      <h3>₹29,999</h3>
-                      <div class="rating">3.6 ⭐</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="Addbtn"><h3>Add To Cart</h3></div>
-              </div>
-              <div class="main-prod">
-                <div class="prod">
-                  <div class="image">
-                    <img
-                      src="images/products/Gemini_Generated_Image_5z17e15z17e15z17.jpeg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="prod-details">
-                    <div class="name"><h2>Lava 51</h2></div>
-                    <div class="feature">
-                      <h3>₹9,999</h3>
-                      <div class="rating">4.1 ⭐</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="Addbtn"><h3>ADD TO CART</h3></div>
-              </div>
-              <div class="main-prod">
-                <div class="prod">
-                  <div class="image">
-                    <img
-                      src="images/products/Gemini_Generated_Image_5z17dy5z17dy5z17.jpeg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="prod-details">
-                    <div class="name"><h2>Gamer X1 Pro</h2></div>
-                    <div class="feature">
-                      <h3>₹79,999</h3>
-                      <div class="rating">4.1 ⭐</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="Addbtn"><h3>Add To Cart</h3></div>
+            </div>
+            <div class="skilldisplay">
+              <h1 class="jsi">JavaScript</h1>
+              <div class="progressbarback">
+                <div class="progress" id="js"></div>
               </div>
             </div>
           </div>
-          <div id="fashion">
-            <div class="products">
-              <div class="main-prod">
-                <div class="prod">
-                  <div class="image">
-                    <img
-                      src="images/products/fashion/pexels-melvin-buezo-1253763-2529148.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="prod-details">
-                    <div class="name"><h2>Gamer X1 Pro</h2></div>
-                    <div class="feature">
-                      <h3>₹79,999</h3>
-                      <div class="rating">4.1⭐</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="Addbtn"><h3>Add To Cart</h3></div>
+        </div>
+        <div class="skillsec">
+          <div class="skilltype"><h1>other skills</h1></div>
+          <div class="skillbox">
+            <div class="skilldisplay">
+              <h1 class="gpci">graphic designing</h1>
+              <div class="progressbarback">
+                <div class="progress" id="graphic"></div>
               </div>
-              <div class="main-prod">
-                <div class="prod">
-                  <div class="image">
-                    <img
-                      src="images/products/fashion/pexels-mnzoutfits-1598507.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="prod-details">
-                    <div class="name"><h2>Kanon 500</h2></div>
-                    <div class="feature">
-                      <h3>₹1,09,999</h3>
-                      <div class="rating">4.9 ⭐</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="Addbtn"><h3>Add To Cart</h3></div>
+            </div>
+            <div class="skilldisplay">
+              <h1 class="vei">video editing</h1>
+              <div class="progressbarback">
+                <div class="progress" id="videoed"></div>
               </div>
-              <div class="main-prod">
-                <div class="prod">
-                  <div class="image">
-                    <img
-                      src="images/products/fashion/pexels-moose-photos-170195-1036623.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="prod-details">
-                    <div class="name"><h2>Flip S200</h2></div>
-                    <div class="feature">
-                      <h3>₹1,50,000</h3>
-                      <div class="rating">4.8 ⭐</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="Addbtn"><h3>Add To Cart</h3></div>
+            </div>
+            <div class="skilldisplay">
+              <h1 class="uixi">ui / ux designing</h1>
+              <div class="progressbarback">
+                <div class="progress" id="uiux"></div>
               </div>
-              <div class="main-prod">
-                <div class="prod">
-                  <div class="image">
-                    <img
-                      src="images/products/fashion/pexels-mstudio-360817-1240892.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="prod-details">
-                    <div class="name"><h2>Samson Y15</h2></div>
-                    <div class="feature">
-                      <h3>₹64,999</h3>
-                      <div class="rating">4.2 ⭐</div>
-                    </div>
-                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- skill section emds -->
+      <!-- project section start -->
+      <div class="mainproject" id="projectmain">
+        <a href="#home"><div class="topbtn">TOP🔼</div></a>
+        <div class="skilltitle">
+          <h1>&lt; projects /&gt;</h1>
+        </div>
+        <div class="projectscontainer">
+          <div class="main-proj">
+            <div class="projectbox" id="main">
+              <a href="projects/ECOMMERC/index.html" target="_blank">
+                <div class="projectimg">
+                  <img
+                    src="projects/ECOMMERC/images/SharedScreenshot.jpg"
+                    alt=""
+                  />
                 </div>
-                <div class="Addbtn"><h3>Add To Cart</h3></div>
-              </div>
-              <div class="main-prod">
-                <div class="prod">
-                  <div class="image">
-                    <img
-                      src="images/products/fashion/pexels-salahkuro28-1232459.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="prod-details">
-                    <div class="name"><h2>Razor TV X4</h2></div>
-                    <div class="feature">
-                      <h3>₹65,999</h3>
-                      <div class="rating">4.1 ⭐</div>
-                    </div>
-                  </div>
+                <div class="projectdetails">
+                  <h1>E-COMM WEB🛒</h1>
+                  <p class="info">
+                    An Exciting Quiz Game With Random Questions!
+                  </p>
                 </div>
-                <div class="Addbtn"><h3>Add To Cart</h3></div>
-              </div>
-              <div class="main-prod">
-                <div class="prod">
-                  <div class="image">
-                    <img
-                      src="images/products/fashion/pexels-spencer-selover-142259-428338.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="prod-details">
-                    <div class="name"><h2>All-Round CCTV</h2></div>
-                    <div class="feature">
-                      <h3>₹29,999</h3>
-                      <div class="rating">3.6 ⭐</div>
-                    </div>
-                  </div>
+              </a>
+            </div>
+          </div>
+          <div class="projectscontainer lessimp">
+            <div class="projectbox highimp" id="main">
+              <a href="projects/ECOMMERC/index.html" target="_blank">
+                <div class="projectimg">
+                  <img
+                    src="projects/ECOMMERC/images/SharedScreenshot.jpg"
+                    alt=""
+                  />
                 </div>
-                <div class="Addbtn"><h3>Add To Cart</h3></div>
-              </div>
-              <div class="main-prod">
-                <div class="prod">
-                  <div class="image">
-                    <img
-                      src="images/products/fashion/pexels-spencer-selover-142259-428340.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="prod-details">
-                    <div class="name"><h2>Lava 51</h2></div>
-                    <div class="feature">
-                      <h3>₹9,999</h3>
-                      <div class="rating">4.1 ⭐</div>
-                    </div>
-                  </div>
+                <div class="projectdetails">
+                  <h1>E-COMM WEB🛒</h1>
+                  <p class="info">
+                    An Exciting Quiz Game With Random Questions!
+                  </p>
                 </div>
-                <div class="Addbtn"><h3>ADD TO CART</h3></div>
-              </div>
-              <div class="main-prod">
-                <div class="prod">
-                  <div class="image">
-                    <img
-                      src="images/products/fashion/pexels-vika-glitter-392079-1620760.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="prod-details">
-                    <div class="name"><h2>Gamer X1 Pro</h2></div>
-                    <div class="feature">
-                      <h3>₹79,999</h3>
-                      <div class="rating">4.1 ⭐</div>
-                    </div>
-                  </div>
+              </a>
+            </div>
+            <div class="projectbox" id="main">
+              <a href="projects/quiz app/index.html" target="_blank">
+                <div class="projectimg">
+                  <img src="projects/quiz app/qg.jpg" alt="" />
                 </div>
-                <div class="Addbtn"><h3>Add To Cart</h3></div>
-              </div>
+                <div class="projectdetails">
+                  <h1>Quiz Game🧠</h1>
+                  <p class="info">
+                    An Exciting Quiz Game With Random Questions!
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="projectbox" id="main">
+              <a href="projects/tweet generator/index.html" target="_blank">
+                <div class="projectimg">
+                  <img src="projects/tweet generator/tweet.jpg" alt="" />
+                </div>
+                <div class="projectdetails">
+                  <h1>Live Tweet Template 🔴</h1>
+                  <p class="info">
+                    Live text update from input to tweet template.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="projectbox" id="main">
+              <a href="projects/to do list/index.html" target="_blank">
+                <div class="projectimg">
+                  <img src="projects/to do list/todolist.jpg" alt="" />
+                </div>
+                <div class="projectdetails">
+                  <h1>To-Do-List 📃</h1>
+                  <p class="info">Add Your To Do Items!</p>
+                </div>
+              </a>
+            </div>
+            <div class="projectbox" id="main">
+              <a href="projects/clock/index.html" target="_blank">
+                <div class="projectimg">
+                  <img src="projects/clock/SharedScreenshot.jpg" alt="" />
+                </div>
+                <div class="projectdetails">
+                  <h1>Clock Website⌚</h1>
+                  <p class="info">Just a Live Clock!</p>
+                </div>
+              </a>
+            </div>
+            <div class="projectbox">
+              <a href="projects/color changer/index.html" target="_blank">
+                <div class="projectimg">
+                  <img src="projects/color changer/colorgenweb.jpg" alt="" />
+                </div>
+                <div class="projectdetails">
+                  <h1>Random Color generator🎨</h1>
+                  <p class="info">
+                    A button has been assigned a function which when clicked
+                    generates random hex code and shows the output in the
+                    background.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="projectbox">
+              <a
+                href="projects/Drum Kit Starting Files/Drum Kit Starting Files/index.html"
+                target="_blank"
+              >
+                <div class="projectimg">
+                  <img
+                    src="projects/Drum Kit Starting Files/Drum Kit Starting Files/images/drumweb.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="projectdetails">
+                  <h1>Drum Kit!🥁</h1>
+                  <p class="info">
+                    You can use mouse or keyboard to play the drum each
+                    button(box) has been assigned different drum sounds.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="projectbox">
+              <a href="projects/dice game/dice.html" target="_blank">
+                <div class="projectimg">
+                  <img src="projects/dice game/diceface/diceweb.jpg" alt="" />
+                </div>
+                <div class="projectdetails">
+                  <h1>The Dice Roller🎲</h1>
+                  <p class="info">Genrates Random Dice Faces On Each refresh</p>
+                </div>
+              </a>
+            </div>
+            <div class="projectbox">
+              <a href="projects/youtube clone/yt.html" target="_blank">
+                <div class="projectimg">
+                  <img src="projects/youtube clone/ytss.jpg" alt="" />
+                </div>
+                <div class="projectdetails">
+                  <h1>Youtube Clone</h1>
+                  <p class="info">Made Using Only HTML AND CSS</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- project section end -->
+      <!-- Resume Section START -->
+      <!-- Resume Section END -->
+    </div>
+    <div class="mainabout" id="about">
+      <a href="#home"><div class="topbtn">TOP🔼</div></a>
+      <div class="skilltitle">
+        <!-- <h1>&lt; about /&gt;</h1> -->
+        <div class="qualification">
+          <div class="quali" id="q1">
+            <h2>ssc</h2>
+            <p>
+              Marking the culmination of my foundational education, I proudly
+              hold the Secondary School Certificate (SSC) from St. Paul's High
+              School, Dadar. This certificate signifies my successful completion
+              of ten years of rigorous academic pursuits, laying the groundwork
+              for future endeavors. My experience at St. Paul's High School not
+              only equipped me with essential knowledge and skills, but also
+              nurtured valuable values and personal growth. It serves as a
+              testament to my dedication, perseverance, and the invaluable
+              guidance received from my teachers and mentors.
+            </p>
+          </div>
+          <div class="quali" id="q2">
+            <h2>hsc</h2>
+            <p>
+              Building upon the solid foundation of my SSC, I subsequently
+              earned the Higher Secondary Certificate (HSC) from M. D. College,
+              Parel. This two-year period, encompassing grades 11 and 12, marked
+              a period of deeper exploration and specialization in chosen
+              subjects. The rigorous curriculum at M. D. College challenged me
+              intellectually, honed my critical thinking skills, and prepared me
+              for further academic challenges. I am grateful for the
+              knowledgeable faculty and supportive environment that fostered my
+              academic growth and personal development during this crucial
+              juncture. Receiving the HSC signifies not only the successful
+              completion of this stage of education but also my dedication to
+              academic pursuits and pursuit of higher goals.
+            </p>
+          </div>
+          <div class="quali" id="q3">
+            <h2>graduation</h2>
+            <p>
+              Following my HSC, I pursued a B.Com. degree at Bhavan's College,
+              Girgaon. This rigorous program (13th-15th standards) instilled in
+              me a deep understanding of commerce, preparing me for a
+              flourishing career path. I'm proud to have successfully navigated
+              this journey, acquiring the knowledge and skills to confidently
+              enter the professional world.
+            </p>
+          </div>
+        </div>
+        <div class="abouttitle">
+          <div class="content">
+            <h1>about me !</h1>
+            <p>
+              Ten years ago, the allure of commerce pulled me down a different
+              path. But deep down, the tech in me tugged, whispering questions
+              about website magic. Curiosity took hold, morphing into
+              pixel-perfect obsession. HTML became my secret language, CSS my
+              palette, and JavaScript my dance partner. As a graphic designer,
+              my eye craved beauty, so I sketched a website dream, then
+              hand-coded it into reality. The journey was rocky, frustration my
+              frequent foe. Yet, with each hurdle cleared, my front-end skills
+              gained momentum. Now, the siren song of back-end beckons,
+              promising new depths to explore. This is my story, a tale of
+              curiosity, code, and pixel-perfect passion, still being written,
+              one line at a time.
+            </p>
+          </div>
+          <div class="socials">
+            <h1>Socials</h1>
+            <div class="links">
+              <a href="" id="instagramid"
+                ><div class="circle">
+                  <i class="fa-brands fa-instagram"></i></div
+              ></a>
+              <a href="" id="youtubeid"
+                ><div class="circle">
+                  <i class="fa-brands fa-youtube"></i></div
+              ></a>
+              <a href="" id="githubid"
+                ><div class="circle">
+                  <i class="fa-brands fa-github"></i></div
+              ></a>
+              <a href="" id="linkedinid"
+                ><div class="circle">
+                  <i class="fa-brands fa-linkedin-in"></i></div
+              ></a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
+
+    <script src="index.js"></script>
   </body>
 </html>
