@@ -1,3 +1,12 @@
+/* SLIDESHOW JS */
+var counter = 1;
+setInterval(function () {
+  document.getElementById("radio" + counter).checked = true;
+  counter++;
+  if (counter > 4) {
+    counter = 1;
+  }
+}, 5000);
 var login = document.querySelectorAll(".login")[0];
 // var loginfrm = document.getElementById("loginfrm");
 // var closebtn = document.getElementById("closebtn");
@@ -22,6 +31,7 @@ function nameChange(name) {
 
 var cartLogo = document.querySelectorAll(".cart")[0];
 var indexAdd = 1;
+
 // var indexBtn = 0;
 
 for (let indexBtn = 0; indexBtn < 16; indexBtn++) {
@@ -89,7 +99,7 @@ for (let indexBtn = 0; indexBtn < 16; indexBtn++) {
   });
 }
 
-for (let indexBtn = 0; indexBtn < 16; indexBtn++) {
+/* for (let indexBtn = 0; indexBtn < 16; indexBtn++) {
   var cats = document.querySelectorAll(".cats")[indexBtn];
   cats.addEventListener("click", changeCat);
   function changeCat() {
@@ -97,4 +107,42 @@ for (let indexBtn = 0; indexBtn < 16; indexBtn++) {
     active.classList.remove("acat");
     this.classList.add("acat");
   }
+} */
+
+/* for (let indexBtn = 0; indexBtn < 10; indexBtn++) {
+     var paymentBtn = document.querySelectorAll(".pay")[indexBtn];
+     
+     paymentBtn.addEventListener("click", function () {
+       console.log("clckld");
+      });
+    } */
+
+/* var loginBtn = document.getElementById("loginbtn");
+loginBtn.addEventListener("keypress", function (event) {
+  console.log(Event);
+});
+ */
+const loginBtn = document.getElementById("loginbtn");
+
+loginBtn.addEventListener("keydown", function (event) {
+  if (event.key === "enter") {
+    // Simulate click on Enter key press
+    this.click();
+  }
+});
+
+var cartO = document.querySelectorAll(".cart-pre")[0];
+
+function openCart() {
+  cartO.classList.add("cart-open");
+  console.log(this);
 }
+
+function closeCart() {
+  cartO.classList.remove("cart-open");
+}
+
+/* document.addEventListener("keypress", function (event) {
+  alert(event.key);
+});
+ */
