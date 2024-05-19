@@ -101,6 +101,7 @@ body {
 
 .data:hover {
   background-color: #ff9595;
+  cursor: pointer;
   span {
     opacity: 1;
     transform: scale(2) rotate(180deg);
@@ -138,4 +139,43 @@ body {
 
 #total-expense {
   color: #;
+}
+
+.input-section #button {
+  display: none;
+}
+
+@media (max-width: 950px) {
+  .input-section {
+    gap: 10px;
+
+    input {
+      width: 100%;
+    }
+
+    #button {
+      display: flex;
+      font-size:40px;
+    }
+  }
+
+  .wrap {
+    flex-direction: column-reverse;
+    gap: 10px;
+    height: 80%;
+  }
+
+  .total-exp {
+    height: 40%;
+    width: 90%;
+    font-size: 90%;
+
+    h1 {
+      font-size: 80px;
+    }
+  }
+
+  #data-store {
+    width: 90%;
+  }
 }
