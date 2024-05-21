@@ -3,6 +3,7 @@ var amountIn = document.getElementById("amount");
 var enter = document.getElementById("button");
 var dataStore = document.getElementById("data-store");
 var total = document.getElementById("total-expense");
+var openText = document.getElementById("openText");
 var totalCount = 0;
 
 // enter.addEventListener("click", getValue);
@@ -16,6 +17,7 @@ document.addEventListener("keyup", function (event) {
     } else {
       entryName.value = "";
       amountIn.value = "";
+      openText.innerHTML = "Total Expenditure";
       addTrans(entry, amount);
       totalCount += Number(amount);
       total.innerHTML = `<h1>₹${totalCount}</h1>`;
@@ -40,7 +42,8 @@ function addTrans(entry, amount) {
  
   }
 } */
-/* function getValue() {
+
+function getValue() {
   var entry = entryName.value;
   var amount = amountIn.value;
   if (entry.length == 0) {
@@ -48,8 +51,10 @@ function addTrans(entry, amount) {
   } else {
     entryName.value = "";
     amountIn.value = "";
+    openText.innerHTML = "Total Expenditure";
+
     addTrans(entry, amount);
     totalCount += Number(amount);
     total.innerHTML = `<h1>₹${totalCount}</h1>`;
   }
-} */
+}
