@@ -18,22 +18,24 @@
   </head>
   <body>
     <div class="main">
+      <!-- <div class="input-wrapper"> -->
       <div class="input-section">
         <input type="text" id="entryname" placeholder="Expense Name" />
         <input type="number" name="amount" placeholder="Amount" id="amount" />
-        <!-- <div id="button">ENTER</div> -->
+        <div id="button" onclick="getValue()">+</div>
       </div>
+      <!-- </div> -->
       <div class="wrap">
         <ul id="data-store">
-       <!--    <li class="data">
+          <!--    <li class="data">
             <h1>ad</h1>
             <h1>ad</h1>
             <span class="material-symbols-outlined"> cancel </span>
           </li> -->
         </ul>
         <div class="total-exp">
-          <h2>TOTAL EXPENDITURE</h2>
-          <div id="total-expense"><h1>₹0</h1></div>
+          <h2 id="openText">Welcome to</h2>
+          <div id="total-expense"><h1>Sushank's Expense Tracker</h1></div>
         </div>
       </div>
     </div>
