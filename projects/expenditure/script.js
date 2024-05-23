@@ -8,6 +8,10 @@ var totalCount = 0;
 
 // enter.addEventListener("click", getValue);
 
+/* alert(
+  "1.ENTER EXPENSE INFO & PRESS ENTER TO MAKE ENTRY. 2. CLICK ON THE ENTRY TO REMOVE IT "
+); */
+
 document.addEventListener("keyup", function (event) {
   if (event.key == "Enter") {
     var entry = entryName.value;
@@ -21,7 +25,15 @@ document.addEventListener("keyup", function (event) {
       addTrans(entry, amount);
       totalCount += Number(amount);
       total.innerHTML = `<h1>₹${totalCount}</h1>`;
+      console.log(totalCount);
     }
+    /* if (totalCount < 10000) {
+      total.style.textShadow = " 0px 1px 20px rgb(0, 255, 98) ";
+      total.classList.toggle("animate")
+    } else {
+      total.style.textShadow = " 0px 1px 20px rgb(255, 0, 0) ";
+      total.classList.toggle("animate");
+    } */
   }
 });
 
@@ -56,5 +68,9 @@ function getValue() {
     addTrans(entry, amount);
     totalCount += Number(amount);
     total.innerHTML = `<h1>₹${totalCount}</h1>`;
+    console.log(totalCount);
   }
+  /*   if (totalCount > 10000) {
+    total.classList.add("animate");
+  } */
 }
