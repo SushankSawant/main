@@ -10,6 +10,17 @@ body {
   background: #dbe2ef;
 }
 
+.reveal{
+  transform: translateY(150px) translateX(-150px);
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.show{
+  transform: translateY(0px) translateX(0px);
+  opacity: 1;
+}
+
 ::selection {
   background: #ffffff;
   color: black;
@@ -472,11 +483,11 @@ ul a li h4 {
   }
 }
 
- {
+/*  {
   .projecttitle h1 {
     opacity: 1;
   }
-}
+} */
 
 .skilltitle,
 .abouttitle h1 {
@@ -516,7 +527,7 @@ ul a li h4 {
 }
 
 .skilldisplay {
-  padding: ;
+  /* padding: ; */
   padding-left: 0px;
   /* background: #3f72af; */
   width: 400px;
@@ -941,7 +952,7 @@ ul a li h4 {
     /* transform: translateY(0px);   */
     left: -300px;
     z-index: 10;
-    width: ;
+    /* width: ; */
     top: 50px;
     height: auto;
 
@@ -1095,7 +1106,7 @@ ul a li h4 {
     padding: 20px;
     background: #112d4e;
     /* display: flex; */
-    flex-direction: row;a
+    flex-direction: row;
     gap: 20px;
     border-radius: 10px;
     margin-bottom: 40px;
