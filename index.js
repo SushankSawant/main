@@ -1,6 +1,6 @@
 document.getElementById("html").style.width = "99%";
 document.getElementById("css").style.width = "80%";
-document.getElementById("js").style.width = "40%";
+document.getElementById("js").style.width = "55%";
 document.getElementById("graphic").style.width = "90%";
 document.getElementById("videoed").style.width = "95%";
 document.getElementById("uiux").style.width = "90%";
@@ -25,4 +25,22 @@ function cMenu() {
   menIcon.classList.add("rotate");
   clsIcon.classList.add("unrotate");
   sidebar.classList.remove("active");
+}
+
+window.addEventListener("scroll", reveal);
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal")
+
+  for (let a = 0 ; a < reveals.length ; a++){
+    var windowheight = window.innerHeight;
+    var revealtop =reveals[a].getBoundingClientRect().top
+    var revealpoint = 150;
+
+    if (revealtop < windowheight - revealpoint) {
+      reveals[a].classList.add('show')
+    }else{
+      
+      reveals[a].classList.remove('show')
+    }
+  }
 }
