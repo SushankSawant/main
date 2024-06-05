@@ -11,9 +11,12 @@ body {
 }
 
 .reveal{
-  transform: translateY(150px) translateX(-150px);
-  opacity: 0;
+ transform: translateX(-550px);
+  /* width: 30%; */
+  opacity: 1;
+  filter: blur(20px);
   transition: 1s all ease-in-out;
+  /* transform: scale(.5); */
 }
 
 .show{
