@@ -20,7 +20,8 @@ body {
 }
 
 .show{
-  transform: translateY(0px) translateX(0px);
+  transform:translateX(0px);
+  filter: blur(0px);
   opacity: 1;
 }
 
