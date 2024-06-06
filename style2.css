@@ -10,8 +10,8 @@ body {
   background: #dbe2ef;
 }
 
-.reveal{
- transform: translateX(-550px);
+.reveal {
+  transform: translateX(-550px);
   /* width: 30%; */
   opacity: 1;
   filter: blur(20px);
@@ -19,8 +19,8 @@ body {
   /* transform: scale(.5); */
 }
 
-.show{
-  transform:translateX(0px);
+.show {
+  transform: translateX(0px);
   filter: blur(0px);
   opacity: 1;
 }
@@ -636,7 +636,7 @@ ul a li h4 {
 .projectscontainer {
   margin-top: 40px;
   display: flex;
-  width:100%;
+  width: 100%;
   justify-content: space-evenly;
   flex-wrap: wrap;
   /* align-items: ; */
@@ -849,11 +849,12 @@ ul a li h4 {
 
 .links {
   display: flex;
+  gap: 20px;
 }
 
 .links a {
   font-size: 30px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
   background: white;
   border-radius: 50%;
   height: 50px;
@@ -935,7 +936,7 @@ ul a li h4 {
     flex-direction: column-reverse;
     gap: 60px;
     margin-top: 100px;
-  } 
+  }
   .skillbox {
     display: flex;
     flex-direction: row;
@@ -943,7 +944,7 @@ ul a li h4 {
     justify-content: center;
   }
 
-  .skilltype h1{
+  .skilltype h1 {
     text-align: center;
   }
 }
@@ -1156,5 +1157,22 @@ ul a li h4 {
 
   .intro p span::after {
     /* display: none;  */
+  }
+
+  .links a {
+    height: 25px;
+    width: 25px;
+    i {
+      font-size: 15px;
+    }
+  }
+  .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .socials{
+    width: 60%;
   }
 }
