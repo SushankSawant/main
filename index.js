@@ -1,9 +1,9 @@
 document.getElementById("html").style.width = "99%";
 document.getElementById("css").style.width = "80%";
 document.getElementById("js").style.width = "55%";
-document.getElementById("graphic").style.width = "90%";
-document.getElementById("videoed").style.width = "95%";
-document.getElementById("uiux").style.width = "90%";
+document.getElementById("graphic").style.width = "80%";
+document.getElementById("videoed").style.width = "75%";
+document.getElementById("uiux").style.width = "50%";
 var sidebar = document.getElementById("sidebar");
 var menIcon = document.querySelector(".menuicon");
 var clsIcon = document.querySelector(".closeicon");
