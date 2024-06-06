@@ -1,5 +1,5 @@
 document.getElementById("html").style.width = "99%";
-document.getElementById("css").style.width = "80%";
+document.getElementById("css").style.width = "95%";
 document.getElementById("js").style.width = "55%";
 document.getElementById("graphic").style.width = "80%";
 document.getElementById("videoed").style.width = "75%";
