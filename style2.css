@@ -636,6 +636,7 @@ ul a li h4 {
 .projectscontainer {
   margin-top: 40px;
   display: flex;
+  width:100%;
   justify-content: space-evenly;
   flex-wrap: wrap;
   /* align-items: ; */
