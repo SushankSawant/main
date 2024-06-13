@@ -954,6 +954,10 @@ ul a li h4 {
     overflow-x: hidden;
   }
 
+  .intro{
+margin-top:60px;
+  }
+
   .mainhome {
     display: flex;
     flex-direction: column;
