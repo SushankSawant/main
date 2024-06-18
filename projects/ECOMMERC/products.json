@@ -1,0 +1,56 @@
+
+[
+    {
+      "id":1,
+      "name":"GAMER X40",
+      "price":20000,
+      "image":"images/products/1.jpeg",
+      "category":"electronics"
+    },
+    {
+  "id":2,
+      "name":"HEATBEAT 240",
+      "price":15000,
+      "image":"images/products/2.jpeg",
+      "category":"electronics"
+    },
+    {
+      "id":3,
+      "name":"mPhone",
+      "price":200000,
+      "image":"images/products/3.jpeg",
+      "category":"electronics"
+    }
+    ,
+    {
+      "id":4,
+      "name":"CAM OP",
+      "price":20000,
+      "image":"images/products/4.jpeg",
+      "category":"electronics"
+    }
+    ,
+    {
+      "id":5,
+      "name":"FLIP S30",
+      "price":250000,
+      "image":"images/products/5.jpeg",
+      "category":"electronics"
+    }
+    ,
+    {
+      "id":6,
+      "name":"CAM 360",
+      "price":50000,
+      "image":"images/products/6.jpeg",
+      "category":"electronics"
+    }
+    ,
+    {
+      "id":7,
+      "name":"POWER TV X14",
+      "price":45000,
+      "image":"images/products/7.jpeg",
+      "category":"electronics"
+    }
+  ]
