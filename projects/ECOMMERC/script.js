@@ -1,17 +1,5 @@
-/* SLIDESHOW JS */
-var counter = 1;
-setInterval(function () {
-  document.getElementById("radio" + counter).checked = true;
-  counter++;
-  if (counter > 4) {
-    counter = 1;
-  }
-}, 5000);
-var login = document.querySelectorAll(".login")[0];
-// var loginfrm = document.getElementById("loginfrm");
-// var closebtn = document.getElementById("closebtn");
+/* LOGIN FORM TOGGLE */
 
-// login.addEventListener("click");
 function openLogin() {
   loginfrm.classList.remove("displaynone");
 }
@@ -19,6 +7,11 @@ function openLogin() {
 function closeLogin() {
   loginfrm.classList.add("displaynone");
 }
+/* LOGIN FORM TOGGLE */
+
+/* NAME CHANGE */
+
+var login = document.querySelectorAll(".login")[0];
 
 function nameChange(name) {
   var name = document.getElementById("nameInp").value;
@@ -29,120 +22,135 @@ function nameChange(name) {
   loginfrm.classList.add("displaynone");
 }
 
-var cartLogo = document.querySelectorAll(".cart")[0];
-var indexAdd = 1;
+/* NAME CHANGE */
 
-// var indexBtn = 0;
+/* SLIDER */
+let slideImage = document.querySelectorAll(".imgs");
 
-for (let indexBtn = 0; indexBtn < 16; indexBtn++) {
-  var add = document.querySelectorAll(".Addbtn")[indexBtn];
+let dots = document.querySelectorAll(".dot");
 
-  add.addEventListener("click", function () {
-    cartLogo.innerHTML =
-      `<span class="material-symbols-outlined"> shopping_cart </span> ` +
-      indexAdd++;
-    console.log(this);
-    this.innerHTML = `<span class="material-symbols-outlined">
-    done
-    </span>`;
+var counter = 0;
+
+function slideNext() {
+  slideImage[counter].style.animation = "next1 1s ease-in-out forwards";
+  if (counter >= slideImage.length - 1) {
+    counter = 0;
+  } else {
+    counter++;
+  }
+  slideImage[counter].style.animation = "next2 1s ease-in-out forwards";
+  // indicator();
+}
+
+function autoSlide() {
+  let deleteInterval = setInterval(timer, 2500);
+  function timer() {
+    slideNext();
+  }
+  // AUTO SLIDING STOP WHEN MOUSE OVER
+  const container = document.querySelector(".slider-wrapper");
+
+  container.addEventListener("mouseover", function () {
+    clearInterval(deleteInterval);
+    // console.log("mouseover");
   });
-}
 
-/* add.addEventListener("click", function () {
-  add.innerHTML = `<span class="material-symbols-outlined">
-  done
-  </span>`;
-}); */
-/* function closePreview() {
-  var preview = document.querySelectorAll(".preview-wrapper")[0];
-  preview.classList.add("displaynone");
-}
-*/
-var main = document.querySelectorAll(".preview-main")[0];
+  // Resume Auto Sliding
+  container.addEventListener("mouseout", autoSlide);
 
-for (let indexBtn = 0; indexBtn < 16; indexBtn++) {
-  var prod = document.querySelectorAll(".prod")[indexBtn];
-
-  // prod.addEventListener("click", function () {
-  //   var image = document.querySelectorAll(".image")[0];
-  //   function getImage() {
-  //     image.innerHTML;
-  //     return;
-  //   }
-  //   preview.classList.remove("displaynone");
-  //   preimage.innerHTML = getImage();
-  // });
-
-  prod.addEventListener("click", function () {
-    console.log("click");
-    var preview = document.createElement("div");
-    preview.classList.add("preview-wrapper");
-    preview.innerHTML =
-      `<div class="preview-container">  <span
-        class="material-symbols-outlined"
-        id="closepre"
-        onclick="closePreview()"
-        >
-        cancel
-        </span>` +
-      this.innerHTML +
-      `</div> `;
-    console.log(preview);
-    console.log(Event);
-    main.appendChild(preview);
-
-    var closePre = document.getElementById("closepre");
-    closePre.addEventListener("click", closePreview);
-    function closePreview() {
-      preview.remove();
+  // Add Remove active class
+  function indicator() {
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].classList = dots[i].classList.replace("active", "");
     }
-  });
+    dots[counter].className += "active";
+  }
 }
+autoSlide();
 
-/* for (let indexBtn = 0; indexBtn < 16; indexBtn++) {
-  var cats = document.querySelectorAll(".cats")[indexBtn];
-  cats.addEventListener("click", changeCat);
-  function changeCat() {
-    var active = document.querySelectorAll(".acat")[0];
-    active.classList.remove("acat");
-    this.classList.add("acat");
-  }
-} */
+/* container.addEventListner("mouseover", function () {
+  clearInterval(deleteInterval);
+}); */
+/* SLIDER */
 
-/* for (let indexBtn = 0; indexBtn < 10; indexBtn++) {
-     var paymentBtn = document.querySelectorAll(".pay")[indexBtn];
-     
-     paymentBtn.addEventListener("click", function () {
-       console.log("clckld");
-      });
-    } */
+/* SHOPPING CART */
+let quantity = 0;
+let cartTab = document.querySelectorAll(".carttab")[0];
+let closeCartBtn = document.querySelectorAll(".closeCartBtn")[0];
+let listProductHtml = document.querySelector(".listProduct");
+let listCartHTML = document.querySelector(".listCart");
+  /* let iconCartSpan = (document.querySelectorAll(".cart span")[1].style.color =
+    "#EEEEEE"); */
 
-/* var loginBtn = document.getElementById("loginbtn");
-loginBtn.addEventListener("keypress", function (event) {
-  console.log(Event);
-});
- */
-const loginBtn = document.getElementById("loginbtn");
-
-loginBtn.addEventListener("keydown", function (event) {
-  if (event.key === "enter") {
-    // Simulate click on Enter key press
-    this.click();
-  }
-});
-
-var cartO = document.querySelectorAll(".cart-pre")[0];
-
+let listProducts = [];
+let carts = [];
 function openCart() {
-  cartO.classList.add("cart-open");
-  console.log(this);
+  cartTab.classList.add("showtab");
 }
 
-function closeCart() {
-  cartO.classList.remove("cart-open");
-}
-
-/* document.addEventListener("keypress", function (event) {
-  alert(event.key);
+closeCartBtn.addEventListener("click", function () {
+  cartTab.classList.remove("showtab");
 });
- */
+
+function addDataToHTML() {
+  listProductHtml.innerHTML = "";
+  if (listProducts.length > 0) {
+    listProducts.forEach((product) => {
+      let newProduct = document.createElement("div");
+      newProduct.classList.add("item");
+      newProduct.dataset.id = product.id;
+      newProduct.innerHTML = `
+      <img
+            src="${product.image}"
+            alt=""
+          />
+          <h2>${product.name}</h2>
+          <div class="price">₹${product.price}</div>
+          <button class="addCart">Add To Cart</button>`;
+      listProductHtml.appendChild(newProduct);
+    });
+  }
+}
+
+listProductHtml.addEventListener("click", (event) => {
+  let postionClick = event.target;
+  if (postionClick.classList.contains("addCart")) {
+    let product_id = postionClick.parentElement.dataset.id;
+    addToCart(product_id);
+  }
+});
+
+function addToCart(product_id) {
+  let positionThisProductInCart = carts.find(
+    (value) => value.product_id == product_id
+  );
+  if (carts.length <= 0) {
+    carts = [
+      {
+        product_id: product_id,
+        quantity: 1,
+      },
+    ];
+  } else if (positionThisProductInCart < 0) {
+    carts.push({
+      product_id: product_id,
+      quantity: 1
+    });
+  }else{
+    carts[positionThisProductInCart].quantity =carts[positionThisProductInCart].quantity + 1;
+  }
+  console.log(carts);
+}
+
+const initApp = () => {
+  // GET DATA
+  fetch("products.json")
+    .then((response) => response.json())
+    .then((data) => {
+      listProducts = data;
+      // console.log(listProducts);
+      addDataToHTML();
+    });
+};
+initApp();
+/* SHOPPING CART */
