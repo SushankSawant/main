@@ -206,6 +206,15 @@ body {
     opacity: 1;
   }
 }
+
+/* .framework {
+  margin-top: 40px;
+}
+ */
+/* {
+  justify-content: space-around;
+} */
+
 .skilldisplay .htmli {
   position: relative;
 }
@@ -220,6 +229,22 @@ body {
   width: 30px;
   margin-left: 10px;
 }
+
+.skilldisplay .bootsi {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url(images/bs.png.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 30px;
+    margin-left: 10px;
+  }
+}
+
 .skilldisplay .cssi {
   position: relative;
 }
@@ -749,7 +774,7 @@ ul a li h4 {
 }
 
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 15px;
 }
 
 ::-webkit-scrollbar-track {
@@ -940,7 +965,7 @@ ul a li h4 {
   .skillbox {
     display: flex;
     flex-direction: row;
-    text-align: center;
+    text-align: left;
     justify-content: center;
   }
 
@@ -954,8 +979,8 @@ ul a li h4 {
     overflow-x: hidden;
   }
 
-  .intro{
-margin-top:60px;
+  .intro {
+    margin-top: 60px;
   }
 
   .mainhome {
@@ -1176,7 +1201,7 @@ margin-top:60px;
     justify-content: center;
   }
 
-  .socials{
+  .socials {
     width: 60%;
   }
 }
