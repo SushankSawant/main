@@ -276,7 +276,7 @@ body {
   flex-direction: row;
   /* height: 300px; */
   gap: 5px;
-  justify-content: space-around;
+  justify-content:center;
   .brandlogo {
     width: 100px;
     height: 100px;
